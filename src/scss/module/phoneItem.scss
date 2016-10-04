@@ -1,0 +1,27 @@
+/*! 핸드폰 리스트 아이템 : module/phoneItem.scss */
+.mod-phoneItem{
+  $wid:210px;
+  $hei:307px;
+  width:$wid;height:$hei;overflow:hidden;box-shadow: 0 0px 10px #b3b3b3;border:1px solid #b4b4b4;font-family:"dotum";font-size:14px;
+  .phoneLink{position:relative;display:block;width:$wid;height:$hei;
+    >span{display:inline-block;}
+    .tit,.price{position:absolute;left:0;width:100%;text-align:center;}
+    .tit{top:247px;color:#5d5d5d;}
+    .price{top:272px;color:#e56464;}
+  }
+}
+
+.mod-phoneList{
+  padding:0 5px;width:100%;max-width:1223px;overflow: hidden;
+  .mod-phoneItem{
+    $gap:40px; // 아이템들간의 간격
+    float:left;margin-top:$gap;margin-left:$gap;
+    &:first-child{margin-left:0;}
+    &:nth-child(6n+0){margin-left:0;}
+    &:nth-child(-n+5){margin-top:0;}
+    // nth-child Support
+    &.no-nthchild-left{margin-left:0;}
+    &.no-nthchild-top{margin-top:0;}
+  }
+
+}

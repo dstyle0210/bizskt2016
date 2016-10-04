@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+/*! 핸드폰 리스트 아이템 : module/phoneItem.scss */
+.mod-phoneItem {
+	width: 210px;
+	height: 307px;
+	overflow: hidden;
+	border: 1px solid #b4b4b4;
+	box-shadow: 0 0px 10px #b3b3b3;
+	font-size: 14px; 
+	font-family: "dotum";}
+	.mod-phoneItem .phoneLink {
+		display: block;
+		position: relative;
+		width: 210px;
+		height: 307px; }
+		.mod-phoneItem .phoneLink > span {
+			display: inline-block; }
+		.mod-phoneItem .phoneLink .tit, .mod-phoneItem .phoneLink .price {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			text-align: center; }
+		.mod-phoneItem .phoneLink .tit {
+			top: 247px;
+			color: #5d5d5d; }
+		.mod-phoneItem .phoneLink .price {
+			top: 272px;
+			color: #e56464; }
+
+.mod-phoneList {
+	padding: 0 5px;
+	max-width: 1223px;
+	width: 100%;
+	overflow: hidden; }
+	.mod-phoneList .mod-phoneItem {
+		float: left;
+		margin-top: 40px;
+		margin-left: 40px; }
+		.mod-phoneList .mod-phoneItem:first-child {
+			margin-left: 0; }
+		.mod-phoneList .mod-phoneItem:nth-child(6n+0) {
+			margin-left: 0; }
+		.mod-phoneList .mod-phoneItem:nth-child(-n+5) {
+			margin-top: 0; }
+		.mod-phoneList .mod-phoneItem.no-nthchild-left {
+			margin-left: 0; }
+		.mod-phoneList .mod-phoneItem.no-nthchild-top {
+			margin-top: 0; }

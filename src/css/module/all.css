@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+/*! 모듈공통 : module/all.scss */
+[class^=mod-] {
+	box-sizing: border-box; }
+	[class^=mod-] * {
+		box-sizing: border-box; }
