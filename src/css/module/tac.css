@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/*! 핸드폰 아이템 라벨(택) : module/tac.scss */
+.tacSec {
+	width: 56px;
+	overflow: hidden; }
+	.tacSec > [class^=tac-] {
+		margin-bottom: 4px; }
+
+[class^=tac-] {
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	background-image: url("../images/common/ico.png"); 
+	background-repeat: no-repeat;}
+
+.tac-max {
+	background-position: 0 0; }
+
+.tac-new {
+	background-position: 0 -80px; }
+
+.tac-free {
+	background-position: 0 -160px; }

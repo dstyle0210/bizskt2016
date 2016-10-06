@@ -99,7 +99,7 @@ gulp.task("html:dist",function(){
         .pipe(gulp.dest(distPath.root));
 });
 gulp.task("html:dist",function(){
-    return gulp.src([srcPath.root+"/**/*.html","!"+srcPath.root+"/_**/*.html"])
+    return gulp.src([srcPath.root+"/**/*.html","!"+srcPath.root+"/module/*.html"])
         .pipe(gulp.dest(distPath.root));
 });
 gulp.task("image:dist",function(){

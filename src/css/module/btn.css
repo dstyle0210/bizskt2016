@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/*! 버튼 모듈 : module/btn.scss */
+[class^=btn-] {
+	display: inline-block;
+	padding-left: 45px;
+	height: 47px;
+	background-image: url("../images/common/btn.png");
+	background-repeat: no-repeat; }
+	[class^=btn-] > span {
+		display: inline-block;
+		padding: 10px 45px 0 0;
+		height: 47px;
+		background-image: url("../images/common/btn.png");
+		background-repeat: no-repeat; 
+		font-size: 22px;
+		color: #fff;}
+
+.btn-basic {
+	background-position: 0 0; }
+	.btn-basic > span {
+		background-position: right 0; }
