@@ -7,7 +7,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,canvas,captio
 body,img{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:none;vertical-align:baseline;font:inherit;border:0}
 body{font-family:"Noto Sans KR",sans-serif;line-height:1;font-size:62.5%}
 img{font-size:100%;max-width:100%}
-html{height:101%}
+html{height:100%}
 article,aside,details,dt,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 ol,ul{list-style:none}
 blockquote,q{quotes:none}
