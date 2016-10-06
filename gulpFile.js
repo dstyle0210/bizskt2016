@@ -37,7 +37,7 @@ gulp.task("default",function(callback){
     runSequence("build","watch",callback);
 });
 gulp.task("dist",["clean:dist"],function(callback){
-    runSequence("html:dist","image:dist","css:dist",callback);
+    runSequence("html:dist","image:dist","js:dist","css:dist",callback);
 });
 gulp.task("build",function(callback){
     runSequence("scss:build","less:build","css:concat",callback);
@@ -91,6 +91,7 @@ gulp.task("css:dist",function(){
         .pipe(replace('/*!','\n/*!'))
         .pipe(replace('{.','{\n\t.'))
         .pipe(replace('"UTF-8";','"UTF-8";\n'))
+        .pipe(replace('css);','css);\n'))
         .pipe(gulp.dest(distPath.css));
 });
 gulp.task("html:dist",function(){
@@ -103,6 +104,10 @@ gulp.task("html:dist",function(){
 });
 gulp.task("image:dist",function(){
     return gulp.src([srcPath.root+"/**/*.{jpg,gif,png}"])
+        .pipe(gulp.dest(distPath.root));
+});
+gulp.task("js:dist",function(){
+    return gulp.src([srcPath.root+"/**/*.js"])
         .pipe(gulp.dest(distPath.root));
 });
 gulp.task("clean:dist",function(){
