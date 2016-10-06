@@ -1,0 +1,19 @@
+@import "../_lib/val";
+
+/*! HEADER : bizskt/header.scss */
+.headerSec{margin:0 auto;width:100%;min-width:$width-wrap;height:90px;overflow:hidden;border-top:17px solid #f0f0f0;background-color:#fff;
+  .inner{margin:0 auto;width:$width-cont;height:73px;overflow:hidden;}
+  h1{float:left;padding-top:10px;width:380px;}
+  .gnb{float:left;padding-top:34px;width:$width-cont - 380px;}
+}
+/*! GNB : bizskt/header.scss */
+.gnb{
+  >ul{width:100%;overflow:hidden;
+    >li{float:left;height:30px;padding-left:30px;
+      >a{display:inline-block;height:30px;padding-bottom:3px;font-size:20px;color:#070606;
+        &:hover,&.on{text-decoration:none;border-bottom:2px solid #ff4e00;}
+      }
+      &:first-child{padding-left:0;}
+    }
+  }
+}

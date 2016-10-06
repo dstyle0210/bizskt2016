@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/*! HEADER : bizskt/header.scss */
+.headerSec {
+	margin: 0 auto;
+	min-width: 1280px;
+	width: 100%;
+	height: 90px;
+	overflow: hidden;
+	border-top: 17px solid #f0f0f0;
+	background-color: #fff; }
+	.headerSec .inner {
+		margin: 0 auto;
+		width: 1224px;
+		height: 73px;
+		overflow: hidden; }
+	.headerSec h1 {
+		float: left;
+		padding-top: 10px;
+		width: 380px; }
+	.headerSec .gnb {
+		float: left;
+		padding-top: 34px;
+		width: 844px; }
+
+/*! GNB : bizskt/header.scss */
+.gnb > ul {
+	width: 100%;
+	overflow: hidden; }
+	.gnb > ul > li {
+		float: left;
+		padding-left: 30px; 
+		height: 30px;}
+		.gnb > ul > li > a {
+			display: inline-block;
+			padding-bottom: 3px;
+			height: 30px;
+			font-size: 20px;
+			color: #070606; }
+			.gnb > ul > li > a:hover, .gnb > ul > li > a.on {
+				border-bottom: 2px solid #ff4e00; 
+				text-decoration: none;}
+		.gnb > ul > li:first-child {
+			padding-left: 0; }

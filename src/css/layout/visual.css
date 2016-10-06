@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*! 상단 공통비주얼베너 : layout/visual.scss */
+.visualSec {
+	width: 100%;
+	overflow: hidden;
+	background-color: #fff; }
+	.visualSec.fixsize {
+		text-align: center; }
+		.visualSec.fixsize img {
+			width: 1280px;
+			height: auto; }

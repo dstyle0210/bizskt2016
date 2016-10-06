@@ -1,0 +1,9 @@
+@import "../_lib/val";
+
+/*! 상단 공통비주얼베너 : layout/visual.scss */
+.visualSec{width:100%;overflow:hidden;
+  background-color: #fff;
+  &.fixsize{text-align:center;
+    img{width: $width-wrap;;height:auto;}
+  }
+}

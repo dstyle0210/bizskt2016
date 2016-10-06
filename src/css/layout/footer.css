@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/*! FOOTER : layout/footer.scss */
+.footerSec {
+	min-width: 1280px;
+	width: 100%;
+	height: 110px;
+	overflow: hidden;
+	background-color: #666666;
+	color: #fff; }
+	.footerSec .inner {
+		margin: 0 auto;
+		width: 1224px;
+		overflow: hidden; }
+	.footerSec .company {
+		float: left;
+		padding-top: 24px; }
+		.footerSec .company strong {
+			font-weight: 400; 
+			font-size: 18px;}
+		.footerSec .company p {
+			padding-top: 5px; 
+			font-size: 11px;}
+			.footerSec .company p span {
+				display: inline-block;
+				padding-left: 20px; }
+	.footerSec .infomation {
+		float: right;
+		padding-top: 24px;
+		text-align: right; }
+		.footerSec .infomation p.tel {
+			font-size: 18px; }
+		.footerSec .infomation p.time {
+			padding-top: 5px; 
+			font-size: 11px;}
+		.footerSec .infomation p.holiday {
+			padding-top: 5px;
+			font-size: 13px;
+			color: #ffff00; }

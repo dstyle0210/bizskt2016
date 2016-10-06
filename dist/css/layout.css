@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+
+/*! 레이아웃 공통(all) : layout/all_layout.scss */
+body{background-color:#666}
+.bizsktWrap{width:100%;overflow:hidden}
+
+
+/*! FOOTER : layout/footer.scss */
+.footerSec{min-width:1280px;width:100%;height:110px;overflow:hidden;background-color:#666;color:#fff}
+.footerSec .inner{margin:0 auto;width:1224px;overflow:hidden}
+.footerSec .company{float:left;padding-top:24px}
+.footerSec .company strong{font-weight:400;font-size:18px}
+.footerSec .company p span{display:inline-block;padding-left:20px}
+.footerSec .infomation{float:right;padding-top:24px;text-align:right}
+.footerSec .infomation p.tel{font-size:18px}
+.footerSec .company p,.footerSec .infomation p.time{padding-top:5px;font-size:11px}
+.footerSec .infomation p.holiday{padding-top:5px;font-size:13px;color:#ff0}
+
+
+/*! HEADER : bizskt/header.scss */
+.headerSec{margin:0 auto;min-width:1280px;width:100%;height:90px;overflow:hidden;border-top:17px solid #f0f0f0;background-color:#fff}
+.headerSec .inner{margin:0 auto;width:1224px;height:73px;overflow:hidden}
+.headerSec h1{float:left;padding-top:10px;width:380px}
+.headerSec .gnb{float:left;padding-top:34px;width:844px}
+
+
+/*! GNB : bizskt/header.scss */
+.gnb>ul{width:100%;overflow:hidden}
+.gnb>ul>li{float:left;padding-left:30px;height:30px}
+.gnb>ul>li>a{display:inline-block;padding-bottom:3px;height:30px;font-size:20px;color:#070606}
+.gnb>ul>li>a.on,.gnb>ul>li>a:hover{border-bottom:2px solid #ff4e00;text-decoration:none}
+.gnb>ul>li:first-child{padding-left:0}
+
+
+/*! 상단 공통비주얼베너 : layout/visual.scss */
+.visualSec{width:100%;overflow:hidden;background-color:#fff}
+.visualSec.fixsize{text-align:center}
+.visualSec.fixsize img{width:1280px;height:auto}
