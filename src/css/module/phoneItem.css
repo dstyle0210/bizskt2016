@@ -27,6 +27,10 @@
 		.mod-phoneItem .phoneLink .price {
 			top: 272px;
 			color: #e56464; }
+		.mod-phoneItem .phoneLink .tacSec {
+			position: absolute;
+			top: 10px;
+			right: 10px; }
 
 .mod-phoneList {
 	padding: 0 5px;

@@ -1,0 +1,9 @@
+
+/*! 버튼 모듈 : module/btn.scss */
+[class^=btn-]{display:inline-block;height:47px;padding-left:45px;background-image:url('../images/common/btn.png');background-repeat:no-repeat;
+  >span{display:inline-block;padding:10px 45px 0 0;height:47px;font-size:22px;color:#fff;background-image:url('../images/common/btn.png');background-repeat:no-repeat;}
+}
+// 버튼 기본형태
+.btn-basic{background-position:0 0;
+  >span{background-position:right 0;}
+}

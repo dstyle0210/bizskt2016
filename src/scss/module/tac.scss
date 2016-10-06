@@ -1,0 +1,10 @@
+@import "../_lib/val";
+
+/*! 핸드폰 아이템 라벨(택) : module/tac.scss */
+.tacSec{width:56px;overflow:hidden;
+  >[class^=tac-]{margin-bottom:4px;}
+}
+[class^=tac-]{display:inline-block;width:56px;height:56px;background-repeat:no-repeat;background-image:url("../images/common/ico.png");}
+.tac-max{background-position:0 0;}
+.tac-new{background-position:0 -80px;}
+.tac-free{background-position:0 -160px;}

@@ -9,6 +9,29 @@
 
 
 
+/*! 버튼 모듈 : module/btn.scss */
+[class^=btn-] {
+	display: inline-block;
+	padding-left: 45px;
+	height: 47px;
+	background-image: url("../images/common/btn.png");
+	background-repeat: no-repeat; }
+	[class^=btn-] > span {
+		display: inline-block;
+		padding: 10px 45px 0 0;
+		height: 47px;
+		background-image: url("../images/common/btn.png");
+		background-repeat: no-repeat; 
+		font-size: 22px;
+		color: #fff;}
+
+.btn-basic {
+	background-position: 0 0; }
+	.btn-basic > span {
+		background-position: right 0; }
+
+
+
 /*! 핸드폰 리스트 아이템 : module/phoneItem.scss */
 .mod-phoneItem {
 	width: 210px;
@@ -36,6 +59,10 @@
 		.mod-phoneItem .phoneLink .price {
 			top: 272px;
 			color: #e56464; }
+		.mod-phoneItem .phoneLink .tacSec {
+			position: absolute;
+			top: 10px;
+			right: 10px; }
 
 .mod-phoneList {
 	padding: 0 5px;
@@ -56,3 +83,111 @@
 			margin-left: 0; }
 		.mod-phoneList .mod-phoneItem.no-nthchild-top {
 			margin-top: 0; }
+
+
+
+/*! 신청단계 : module/tab.scss */
+[class^=step-] {
+	width: 1224px;
+	height: 60px;
+	background-image: url("../images/common/tab.gif"); 
+	background-repeat: no-repeat;}
+
+.step-4up.step1 {
+	background-position: 0 0; }
+
+.step-4up.step2 {
+	background-position: 0 -70px; }
+
+.step-4up.step3 {
+	background-position: 0 -140px; }
+
+.step-4up.step4 {
+	background-position: 0 -210px; }
+
+.step-3up.step1 {
+	background-position: 0 -280px; }
+
+.step-3up.step2 {
+	background-position: 0 -350px; }
+
+.step-3up.step3 {
+	background-position: 0 -420px; }
+
+.step-3up.step4 {
+	background-position: 0 -420px; }
+
+/*! 탭링크 : module/tab.scss */
+.tab-link {
+	width: 1224px;
+	overflow: hidden; }
+	.tab-link > ul {
+		position: relative;
+		width: 100%;
+		height: 60px;
+		overflow: hidden; }
+		.tab-link > ul li {
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 60px;
+			border: 2px solid #cecece;
+			background-color: #fff; }
+			.tab-link > ul li a {
+				display: inline-block;
+				padding-top: 15px;
+				width: 100%;
+				height: 60px;
+				text-align: center;
+				font-size: 22px;
+				color: #a0a0a0; }
+			.tab-link > ul li.on {
+				z-index: 2; 
+				border: 2px solid #1a91d0;
+				border-radius: 5px;
+				background-color: #f8ffff;}
+				.tab-link > ul li.on a {
+					color: #0084c7; }
+	.tab-link.tab-3up li {
+		width: 33.6%; }
+		.tab-link.tab-3up li:nth-child(1) {
+			left: 0; }
+		.tab-link.tab-3up li:nth-child(2) {
+			left: 33%; }
+		.tab-link.tab-3up li:nth-child(3) {
+			left: 66%; }
+	.tab-link.tab-2up li {
+		width: 50.2%; }
+		.tab-link.tab-2up li:nth-child(1) {
+			left: 0; }
+		.tab-link.tab-2up li:nth-child(2) {
+			left: 49.8%; }
+	.tab-link.tab-1up li {
+		width: 100%; }
+		.tab-link.tab-1up li:nth-child(1) {
+			left: 0; }
+
+
+
+/*! 핸드폰 아이템 라벨(택) : module/tac.scss */
+.tacSec {
+	width: 56px;
+	overflow: hidden; }
+	.tacSec > [class^=tac-] {
+		margin-bottom: 4px; }
+
+[class^=tac-] {
+	display: inline-block;
+	width: 56px;
+	height: 56px;
+	background-image: url("../images/common/ico.png"); 
+	background-repeat: no-repeat;}
+
+.tac-max {
+	background-position: 0 0; }
+
+.tac-new {
+	background-position: 0 -80px; }
+
+.tac-free {
+	background-position: 0 -160px; }

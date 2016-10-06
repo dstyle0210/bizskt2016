@@ -104,3 +104,13 @@ a:hover {
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none; }
+
+.tts, caption {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+	margin: -1px;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	border: 0; }
