@@ -1,7 +1,6 @@
 $(function(){
     Mod.phoneList();
-
-    Mod.offerSecHeight();
+    Mod.accList();
 });
 
 var Mod = {
@@ -16,7 +15,14 @@ var Mod = {
             });
         };
     },
-    offerSecHeight:function(){
-
+    accList:function(){
+        var modAccList = $(".mod-accList");
+        if (modAccList.length && !Modernizr.nthchild) {
+            modAccList.each(function () {
+                var me = $(this);
+                me.find(".mod-accItem:first-child,.mod-accItem:nth-child(6n+0)").addClass("no-nthchild-left");
+                me.find(".mod-accItem:nth-child(-n+5)").addClass("no-nthchild-top");
+            });
+        };
     }
 };
