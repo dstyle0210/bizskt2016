@@ -2,9 +2,9 @@
 
 /*! LNB 요금계산기 : module/lnb.scss */
 .writeInfomationSec {
-	float: left;
 	width: 315px;
 	border: 1px solid #d3d3d3;
+	border-width: 1px 1px 0 1px;
 	background-color: #fff;
 	color: #666; }
 	.writeInfomationSec h2.tit {

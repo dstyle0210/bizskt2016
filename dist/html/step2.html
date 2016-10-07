@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BIZ SKT</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/module.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/page.css">
+
+    <script src="../lib/modernizr/modernizr-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+    <script src="../js/mod.js"></script>
+</head>
+<body>
+<div class="bizsktWrap">
+    <!-- 헤더 -->
+    <div class="headerSec">
+        <div class="inner">
+            <h1><a href="/"><img src="../images/header/logo.jpg" alt=""></a></h1>
+            <div class="gnb">
+                <ul>
+                    <li><a href="#">휴대폰</a></li>
+                    <li><a href="#" class="on">인터넷/전화/IPTV</a></li>
+                    <li><a href="#">액세서리</a></li>
+                    <li><a href="#">이벤트/기획전</a></li>
+                    <li><a href="#">고객게시판</a></li>
+                    <li><a href="#">신청확인</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- // 헤더 -->
+
+    <!-- 비주얼베너 -->
+    <div class="visualSec fixsize">
+        <img src="../images/temp/@topBnr.jpg" alt="" usemap="#imagemap" /> <!-- 비주얼 이미지는 가로 1280px로 고정됩니다. 해제가 필요 할경우 <div class="visualSec"> 로 "fixsize" 클래스를 삭제하세요. -->
+        <map name="imagemap">
+            <area shape="rect" coords="205,242,340,285" href="" title="자세히보기" target="_blank" />
+        </map>
+    </div>
+    <!-- // 비주얼베너 -->
+
+    <!-- 컨덴츠영역 -->
+    <div class="contentSec step2ContentSec">
+        <div class="inner">
+            <!-- 프로그래스 : step2 -->
+            <div class="step-4up step2"><span class="tts">요금제 선택</span></div>
+            <!-- // 프로그래스 : step2 -->
+
+            <!-- 요금계산 -->
+            <div class="offerSec">
+                <!-- 좌측영역 -->
+                <div class="lnbSec">
+
+                    <!-- LNB 요금계산기 : 기본 as-is 로 작성됨 -->
+                    <div class="writeInfomationSec">
+                        <div class="itemThumb"><img src="../images/temp/@detail.gif" width="313" height="368" alt="" />
+                            <a href="#" class="detail"><img src="../images/common/btnDetail.gif" alt="자세히보기" /></a>
+                        </div>
+
+                        <div class="itemReqeust">
+                            <h2 class="tit">통신요금 + 단말기가격</h2>
+                            <!-- 통신요금 -->
+                            <div class="telecomInfoSec">
+                                <h3>통신요금</h3>
+                                <dl class="tac">
+                                    <dt>기본료</dt>
+                                    <dd>38,500 원</dd>
+                                </dl>
+                                <dl class="spec">
+                                    <dt>통신요금①</dt>
+                                    <dd>월 38,500 원</dd>
+                                </dl>
+                                <p class="desc">부가세 포함</p>
+                            </div>
+                            <!-- // 통신요금 -->
+
+                            <!-- 단말기가격 -->
+                            <div class="deviceInfoSec">
+                                <h3>단말기가격</h3>
+                                <dl class="tac">
+                                    <dt>출고가</dt>
+                                    <dd class="text-md">836,000 원</dd>
+                                </dl>
+
+                                <dl class="tac">
+                                    <dt>공시지원금
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help0" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help0" style="width:300px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+                                            지원금: 통신사와의 약정 통해 선할인 받는 금액입니다. 약정해지시 지원금이 위약금으로 청구됩니다.<br>
+                                            &nbsp;<br>
+                                            <span style="font-size:11px; font-weight:normal;"> * 자세한 사항은 <a href="http://www.tworlddirect.com/Dantong-Seller.html" target="_blank">공시지원금 제도</a>를 참고하세요.</span>
+											</span>
+										</span>
+									</span>
+                                    </dt>
+                                    <dd class="text-minus">-89,000원</dd>
+                                </dl>
+
+                                <dl class="tac">
+                                    <dt>추가지원금
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help1" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help1" style="width:400px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+												* 판매점이나 대리점에서는 이동통신사가 공시한 지원금의 15%이내에서 추가 지원금 제공 가능합니다.
+											</span>
+										</span>
+									</span>
+                                    </dt>
+                                    <dd class="text-minus">-13,300원</dd>
+                                </dl>
+
+                                <dl class="tac">
+                                    <dt>할부원금</dt>
+                                    <dd class="text-md">733,700 원</dd>
+                                </dl>
+                                <dl class="tac">
+                                    <dt>월 단말기 할부금
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help2" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help2" style="width:200px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+												* 매월청구되는 단말기 할부원금입니다.
+											</span>
+										</span>
+									</span>
+                                    </dt>
+                                    <dd class="text-md">30,571 원</dd>
+                                </dl>
+                                <dl class="tac">
+                                    <dt class="text-interest">월 할부이자
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help3" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help3" style="width:700px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+												* 단말기 할부구매시 할부이자는 원리금균등 상환방식으로 매월 청구되는 월 청구액은 동일하게 됩니다.<br>
+매월 청구액 / 할부이자 계산 방식<br>
+
+<font style="color: #ff3301; size: 12px;">1. 월 이자율 - 연 이자율 5.9% / 12개월 = 0.492%<br>
+    2. 매월 청구액 = 단말할부금 * 월 이자율* (1+월 이자율) ^ 할부개월 수 (1+월 이자율) ^ 할부개월 수 -1<br>
+    3. 총 납부 할부금 = 매월 청구액 * 할부개월 수 <br>
+    4. 매월 할부이자 = 매월 잔여 총할부금 * 월 이자율<br>
+    5. 매월 청구액에서 할부이자를 뺀 금액이 단말할부금이 됨<br></font>
+											</span>
+										</span>
+									</span>
+                                    </dt>
+                                    <dd class="text-interest">+ 1,914 원</dd>
+                                </dl>
+                                <dl class="spec">
+                                    <dt>고객부담 단말기 가격②</dt>
+                                    <dd>32,485 원</dd>
+                                </dl>
+                            </div>
+                            <!-- // 단말기가격 -->
+
+                            <!-- 월 납부금 -->
+                            <div class="totalSec">
+                                <dl class="total">
+                                    <dt>월 평균 총 납부금<br>(①+②)</dt>
+                                    <dd>월 <strong>63,065</strong> 원</dd>
+                                </dl>
+                                <h4></h4>
+                            </div>
+                            <!-- // 월 납부금 -->
+                        </div>
+                        <div class="happyPoint">
+                            <h2 class="tit">해피포인트</h2>
+                            <p class="point">해피포인트증정: <i>20,000 point</i></p>
+                            <p class="desc">※ 사은품 신청완료 후 잔여 해피포인트는 자동소멸됩니다.</p>
+                        </div>
+
+                    </div>
+                    <!-- // LNB 요금계산기 : 기본 as-is 로 작성됨 -->
+
+                </div>
+                <!-- // 좌측영역 -->
+
+
+                <!-- 우측영역 -->
+                <div class="rightSec">
+
+                    <!-- 신청서 : 기본 as-is 로 작성됨 -->
+                    <div class="writeFormSec">
+                        <h2>갤럭시S7 엣지 (SM-G935S)</h2>
+
+                        <div class="writeFieldsetSec">
+                            <!-- 가입유형,용량 및 색상선택, 약정&할부기간 -->
+                            <div class="requestTypeSec">
+                                <dl class="inline-dl">
+                                    <dt>1. 가입유형</dt>
+                                    <dd>
+
+                                        <label style="margin-right: 10px;"> <input type="radio" name="mode" value="NEW" checked="" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '블랙', 'RC061', '0');">신규가입</label>
+
+                                        <label style="margin-right: 10px;"> <input type="radio" name="mode" value="MOVE" onclick="jsOrderInfo('5', 'MOVE', '', 'JTC002', '32', '블랙', 'RC061', '0');">번호이동</label>
+
+
+                                    </dd>
+                                </dl>
+
+                                <dl class="inline-dl">
+                                    <dt>2. 용량 및 색상선택</dt>
+                                    <dd>
+
+                                        <select name="mobile_volume" id="" style="width:300px;" onchange="jsOrderInfo('5', 'NEW', '', 'JTC002', this.value, '블랙', 'RC061', '0');">
+
+                                            <option value="32" selected="">8GB /화이트</option>
+
+                                            <option value="64">64G</option>
+
+                                        </select>
+
+                                    </dd>
+                                </dl>
+
+                                <dl class="inline-dl">
+                                    <dt>3. 약정&amp;할부기간</dt>
+                                    <dd>
+
+                                        <label> <input type="radio" name="installment_term" value="JTC002" checked="" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '블랙', 'RC061', '0');"> 24 개월</label>
+
+
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- // 가입유형,용량 및 색상선택, 약정&할부기간 -->
+
+                            <!-- 요금제 선택 -->
+                            <div class="requestSelectPlanSec">
+                                <dl class="block-dl">
+                                    <dt>4. 요금제 선택</dt>
+                                    <dd>
+                                        <div class="planTableSec">
+                                            <table>
+                                                <colgroup>
+                                                    <col style="width:5%">
+                                                    <col style="width:auto">
+                                                    <col style="width:15%">
+                                                    <col style="width:15%">
+                                                    <col style="width:10%">
+                                                    <col style="width:10%">
+                                                    <col style="width:10%">
+                                                    <col style="width:10%">
+                                                </colgroup>
+                                                <thead>
+                                                <tr>
+                                                    <th>&nbsp;</th>
+                                                    <th>요금제</th>
+                                                    <th>월정액</th>
+                                                    <th>월할인금액</th>
+                                                    <th>음성</th>
+                                                    <th>부가음성</th>
+                                                    <th>문자</th>
+                                                    <th>데이터</th>
+                                                </tr>
+                                                </thead>
+
+                                                <tbody><tr>
+                                                    <td><input type="radio" name="rate" value="RC061" checked="" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '블랙', 'RC061', '0');"></td>
+                                                    <td class="planName">T끼리 35</td>
+                                                    <td>38,500원</td>
+                                                    <td>
+
+                                                        -7,920원
+
+
+                                                    </td>
+                                                    <td>80분</td>
+                                                    <td>-</td>
+                                                    <td>무제한</td>
+                                                    <td>550MB</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><input type="radio" name="rate" value="RC062" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '블랙', 'RC062', '0');"></td>
+                                                    <td class="planName">T끼리 45</td>
+                                                    <td>49,500원</td>
+                                                    <td>
+
+                                                        -12,375원
+
+
+                                                    </td>
+                                                    <td>130분</td>
+                                                    <td>-</td>
+                                                    <td>무제한</td>
+                                                    <td>1.1GB</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><input type="radio" name="rate" value="RC063" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '블랙', 'RC063', '0');"></td>
+                                                    <td class="planName">T끼리 55</td>
+                                                    <td>60,500원</td>
+                                                    <td>
+
+                                                        -15,675원
+
+
+                                                    </td>
+                                                    <td>180분</td>
+                                                    <td>-</td>
+                                                    <td>무제한</td>
+                                                    <td>2GB</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><input type="radio" name="rate" value="RC068" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '블랙', 'RC068', '0');"></td>
+                                                    <td class="planName">전국민 무한 69</td>
+                                                    <td>75,900원</td>
+                                                    <td>
+
+                                                        -19,250원
+
+
+                                                    </td>
+                                                    <td>200분</td>
+                                                    <td>-</td>
+                                                    <td>무제한</td>
+                                                    <td>5GB</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td><input type="radio" name="rate" value="RC266" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '블랙', 'RC266', '0');"></td>
+                                                    <td class="planName">LTE데이터무제한 80팩</td>
+                                                    <td>88,000원</td>
+                                                    <td>
+
+                                                        -20,625원
+
+
+                                                    </td>
+                                                    <td>300분</td>
+                                                    <td>-</td>
+                                                    <td>무제한</td>
+                                                    <td>8GB+무제한</td>
+                                                </tr>
+
+                                                </tbody></table>
+                                        </div>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <!-- 요금제 선택 -->
+
+                            <!-- 할인유형 선택 -->
+                            <div class="requestSaleTypeSec">
+                                <dl class="inline-dl">
+                                    <dt>5. 할인유형선택</dt>
+                                    <dd>
+
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" onclick="jsOrderInfo('5', 'NEW', '', 'JTC002', '32', '핑크', 'RC061', '0');">다이렉트_biz 결합할인</label>
+
+                                    </dd>
+                                </dl>
+                                <p class="noticeDesc">※ 할인유형 중 본인에게 유리한 조건으로 선택 가능합니다.</p>
+                            </div>
+                            <!-- // 할인유형 선택 -->
+
+                            <!-- 할인유형2 선택 -->
+                            <div class="requestSaleType2Sec">
+                                <dl class="block-dl">
+                                    <dt>6.T끼리 온가족할인&복지할인 확인</dt>
+                                    <dd>
+                                        <b>- T끼리 온가족할인:</b>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />해당없음</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />10년미만</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />20년미만</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />30년미만</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />30년이상</label>
+                                    </dd>
+                                    <dd>
+                                        <b>- 복지할인:</b>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />해당없음</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />10년미만</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />20년미만</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />30년미만</label>
+                                        <label style="margin-right: 10px;"> <input type="radio" name="choice_type" value="0" checked="" />30년이상</label>
+                                    </dd>
+                                </dl>
+                                <p class="noticeDesc">※ 온가족할인 및 복지할인은 별도의 확인 및 증빙절차가 필요합니다.</p>
+                            </div>
+                            <!-- // 할인유형2 선택 -->
+
+                            <!-- 중고폰보상 선택 -->
+                            <div class="requestSaleType2Sec">
+                                <dl class="block-dl">
+                                    <dt>7.중고폰 보상</dt>
+                                    <dd>
+                                       <b> - 기종선택 :</b>
+                                        <select name="" id="" style="width:300px;">
+                                            <option value="" selected="">갤럭시 S7</option>
+                                            <option value="" selected="">아이폰 5S</option>
+                                            <option value="" selected="">아이폰 6S</option>
+                                        </select>
+                                      <b>= 예상보상금액(A급기준):</b> <input type="text" name="" id="" style="width:150px;" /> 원
+                                    </dd>
+                                </dl>
+                                <p class="noticeDesc">※ 위의 입력란에 현재 본인이 보유하고있는 스마트폰 기종을 입력하세요 (예: 갤럭시S7)</p>
+                                <p class="noticeDesc">※ 중고폰 보상 및 회수는 구매신청 후 해피콜을 통해 직접 안내해드릴  예정입니다.</p>
+                            </div>
+                            <!-- // 중고폰보상 선택 -->
+
+                            <div class="submitSec">
+                                <a href="#" class="btn-basic"><span>사은품 선택으로 이동</span></a>
+                            </div>
+                        </div>
+
+                        <!-- 신청서하단 베너영역 -->
+                        <div class="formBnrSec">
+                            <a href="#"><img src="../images/temp/@formBnr.jpg" alt=""></a>
+                        </div>
+                        <!-- // 신청서하단 베너영역 -->
+
+                    </div>
+                    <!-- // 신청서 : 기본 as-is 로 작성됨 -->
+
+
+                </div>
+                <!-- // 우측영역 -->
+
+
+
+            </div>
+            <!-- // 요금계산 -->
+
+        </div><!-- // .inner -->
+    </div>
+    <!-- // 컨덴츠영역 -->
+
+    <!-- 풋터 -->
+    <div class="footerSec">
+        <div class="inner">
+            <div class="company">
+                <strong>투비아티산</strong>
+                <p>
+                    대표이사 안대식 | 사업자등록번호 : 215-86-64478 | 개인정보관리책임자 : 오성준
+                    <span>소재지:(137-040) 서울특별시 서초구 반포동 혜성빌딩 511호</span>
+                </p>
+            </div>
+            <div class="infomation">
+                <p class="tel">TEL 02-2202-3382 FAX 02-6008-9697</p>
+                <p class="time">오전 10:00 ~ 오후 6:00</p>
+                <p class="holiday">주일,휴일,야간 문의전화 : 010-4020-9697</p>
+            </div>
+        </div>
+    </div>
+    <!-- // 풋터 -->
+</div>
+</body>
+</html>

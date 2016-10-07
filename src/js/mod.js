@@ -1,5 +1,7 @@
 $(function(){
     Mod.phoneList();
+
+    Mod.offerSecHeight();
 });
 
 var Mod = {
@@ -13,5 +15,8 @@ var Mod = {
                 me.find(".mod-phoneItem:nth-child(-n+5)").addClass("no-nthchild-top");
             });
         };
+    },
+    offerSecHeight:function(){
+
     }
 };

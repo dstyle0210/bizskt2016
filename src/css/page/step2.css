@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-
-/*! 메인페이지 : page/main.scss */
-.mainContentSec .inner > [class^=step-] {
-	margin-top: 20px; }
-
-.mainContentSec .inner .itemsArticle {
-	margin-top: 35px; }
-	.mainContentSec .inner .itemsArticle .mod-phoneList {
-		margin-top: 15px; }
-
-
-
 /*! 요금제 선택 : page/step2.scss */
 .step2ContentSec .inner > [class^=step-] {
 	margin-top: 20px; }
