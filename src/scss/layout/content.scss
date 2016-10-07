@@ -1,0 +1,6 @@
+@import "../_lib/val";
+
+/*! CONTENT : layout/content.scss */
+.contentSec{padding-bottom:40px;width:100%;min-width:$width-wrap;background-color: #fff;overflow:hidden;
+  .inner{margin:0 auto;width:$width-cont;}
+}

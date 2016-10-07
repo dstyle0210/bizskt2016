@@ -6,6 +6,11 @@ body{background-color:#666}
 .bizsktWrap{width:100%;overflow:hidden}
 
 
+/*! CONTENT : layout/content.scss */
+.contentSec{padding-bottom:40px;min-width:1280px;width:100%;overflow:hidden;background-color:#fff}
+.contentSec .inner{margin:0 auto;width:1224px}
+
+
 /*! FOOTER : layout/footer.scss */
 .footerSec{min-width:1280px;width:100%;height:110px;overflow:hidden;background-color:#666;color:#fff}
 .footerSec .inner{margin:0 auto;width:1224px;overflow:hidden}

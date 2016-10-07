@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BIZ SKT</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/module.css">
+    <link rel="stylesheet" href="../css/layout.css">
+
+    <script src="../lib/modernizr/modernizr-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+    <script src="../js/mod.js"></script>
+</head>
+<body>
+
+<!-- LNB 요금계산기 : 기본 as-is 로 작성됨 -->
+<div class="writeInfomationSec">
+    <div class="itemThumb"><img src="../images/temp/@detail.gif" width="313" height="368" alt="" />
+        <a href="#" class="detail"><img src="../images/common/btnDetail.gif" alt="자세히보기" /></a>
+    </div>
+
+    <div class="itemReqeust">
+        <h2 class="tit">통신요금 + 단말기가격</h2>
+        <!-- 통신요금 -->
+        <div class="telecomInfoSec">
+            <h3>통신요금</h3>
+            <dl class="tac">
+                <dt>기본료</dt>
+                <dd>38,500 원</dd>
+            </dl>
+            <dl class="spec">
+                <dt>통신요금①</dt>
+                <dd>월 38,500 원</dd>
+            </dl>
+            <p class="desc">부가세 포함</p>
+        </div>
+        <!-- // 통신요금 -->
+
+        <!-- 단말기가격 -->
+        <div class="deviceInfoSec">
+            <h3>단말기가격</h3>
+            <dl class="tac">
+                <dt>출고가</dt>
+                <dd class="text-md">836,000 원</dd>
+            </dl>
+
+            <dl class="tac">
+                <dt>공시지원금
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help0" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help0" style="width:300px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+                                            지원금: 통신사와의 약정 통해 선할인 받는 금액입니다. 약정해지시 지원금이 위약금으로 청구됩니다.<br>
+                                            &nbsp;<br>
+                                            <span style="font-size:11px; font-weight:normal;"> * 자세한 사항은 <a href="http://www.tworlddirect.com/Dantong-Seller.html" target="_blank">공시지원금 제도</a>를 참고하세요.</span>
+											</span>
+										</span>
+									</span>
+                </dt>
+                <dd class="text-minus">-89,000원</dd>
+            </dl>
+
+            <dl class="tac">
+                <dt>추가지원금
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help1" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help1" style="width:400px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+												* 판매점이나 대리점에서는 이동통신사가 공시한 지원금의 15%이내에서 추가 지원금 제공 가능합니다.
+											</span>
+										</span>
+									</span>
+                </dt>
+                <dd class="text-minus">-13,300원</dd>
+            </dl>
+
+            <dl class="tac">
+                <dt>할부원금</dt>
+                <dd class="text-md">733,700 원</dd>
+            </dl>
+            <dl class="tac">
+                <dt>월 단말기 할부금
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help2" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help2" style="width:200px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+												* 매월청구되는 단말기 할부원금입니다.
+											</span>
+										</span>
+									</span>
+                </dt>
+                <dd class="text-md">30,571 원</dd>
+            </dl>
+            <dl class="tac">
+                <dt class="text-interest">월 할부이자
+									<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help3" style="cursor: pointer;">
+
+										<span class="component-tooltip" id="help3" style="width:700px;">
+											<a href="#" class="btnClose" onclick="control_tooltip.close();return false;"><img src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+											<span class="cont"><br>
+												* 단말기 할부구매시 할부이자는 원리금균등 상환방식으로 매월 청구되는 월 청구액은 동일하게 됩니다.<br>
+매월 청구액 / 할부이자 계산 방식<br>
+
+<font style="color: #ff3301; size: 12px;">1. 월 이자율 - 연 이자율 5.9% / 12개월 = 0.492%<br>
+    2. 매월 청구액 = 단말할부금 * 월 이자율* (1+월 이자율) ^ 할부개월 수 (1+월 이자율) ^ 할부개월 수 -1<br>
+    3. 총 납부 할부금 = 매월 청구액 * 할부개월 수 <br>
+    4. 매월 할부이자 = 매월 잔여 총할부금 * 월 이자율<br>
+    5. 매월 청구액에서 할부이자를 뺀 금액이 단말할부금이 됨<br></font>
+											</span>
+										</span>
+									</span>
+                </dt>
+                <dd class="text-interest">+ 1,914 원</dd>
+            </dl>
+            <dl class="spec">
+                <dt>고객부담 단말기 가격②</dt>
+                <dd>32,485 원</dd>
+            </dl>
+        </div>
+        <!-- // 단말기가격 -->
+
+        <!-- 월 납부금 -->
+        <div class="totalSec">
+            <dl class="total">
+                <dt>월 평균 총 납부금<br>(①+②)</dt>
+                <dd>월 <strong>63,065</strong> 원</dd>
+            </dl>
+            <h4></h4>
+        </div>
+        <!-- // 월 납부금 -->
+    </div>
+    <div class="happyPoint">
+        <h2 class="tit">해피포인트</h2>
+        <p class="point">해피포인트증정: <i>20,000 point</i></p>
+        <p class="desc">※ 사은품 신청완료 후 잔여 해피포인트는 자동소멸됩니다.</p>
+    </div>
+
+</div>
+<!-- // LNB 요금계산기 : 기본 as-is 로 작성됨 -->
+
+</body>
+</html>

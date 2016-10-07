@@ -1,0 +1,50 @@
+
+/*! LNB 요금계산기 : module/lnb.scss */
+.writeInfomationSec{float:left;width:315px;border:1px solid #d3d3d3;background-color:#fff;color:#666;
+  h2.tit{height:52px;padding-top:13px;font-size:24px;color:#fff;text-align:center;background-color: #1091d0;}
+}
+.writeInfomationSec .itemThumb{position:relative;width:313px;height:368px;
+  >img{width:313px;height:368px;}
+  >a.detail{position:absolute;top:305px;left:90px;}
+}
+.writeInfomationSec .itemReqeust{padding-bottom:25px;
+  h3{padding-left:24px;font-size:16px;background:url(../images/common/icoBlackCircle.gif) 10px 50% no-repeat;font-weight:700;color:#666;}
+
+  // 통신요금
+  .telecomInfoSec{margin:0 auto;padding-top:30px;width:260px;font-family:"dotum";padding-bottom:22px;background:url(../images/common/bulPlus.gif) center bottom no-repeat}
+  .deviceInfoSec{margin:0 auto;padding-top:10px;width:260px;font-family:"dotum";padding-bottom:40px;background:url(../images/common/bulEqual.gif) center bottom no-repeat}
+
+  // 좌우 구분형식
+  .tac{box-sizing:border-box;margin-top:5px;padding:5px 10px;width:100%;border-bottom:1px solid #dadada;
+    &:after,&:before{display:table;content:"";line-height:0}
+    &:after{clear:both}
+    dt{float:left;font-size:14px;font-weight:700}
+    dd{float:right;font-size:12px;text-align:right;font-weight:700}
+  }
+  .spec{margin-top:5px;padding:10px 10px;width:100%;height:36px;background:#8f8f8f;overflow:hidden;box-sizing:border-box;border-radius:5px;
+    dt{float:left;font-size:14px;font-weight:700;color:#fff;letter-spacing:-1px;}
+    dd{float:right;font-size:14px;text-align:right;color:#fff;font-weight:700;}
+  }
+  .total{margin:0 auto;margin-top:5px;padding:6px 10px;width:260px;height:57px;background:#8f8f8f;overflow:hidden;box-sizing:border-box;border-radius:5px;
+    dt{float:left;font-size:16px;font-weight:700;color:#fff;text-align:center;line-height:1.4;}
+    dd{float:right;padding-top:8px;font-size:14px;text-align:right;color:#fff;vertical-align:baseline}
+    dd>strong{font-size:22px}
+  }
+  .desc{padding-top:3px;text-align:right;font-size:11px;color:#ff725d}
+  .text-md{font-size:14px!important}
+  .text-minus{color:#ff3301}
+  .text-interest{color:#006ff9}
+  .help{vertical-align:middle;position:relative}
+}
+
+// 해피포인트
+.writeInfomationSec .happyPoint{
+  .point{margin:0 auto;padding:13px 0;width:284px;font-size:20px;color:#000;text-align:center;border-bottom:1px solid #d3d3d3;font-weight:400;
+    >i{color:#ff0000;}
+  }
+  .desc{margin:0 auto;padding:10px 0;width:284px;font-size:15px;color:#666;text-indent:-17px;padding-left:17px;line-height:1.3;}
+}
+
+
+.component-tooltip{display:none;position:absolute;top:20px;left:0;padding:15px 10px;box-sizing:border-box;background:#fff;border:1px solid #ccc;z-index:100;color:#333}
+.component-tooltip .btnClose{position:absolute;top:0;right:0}

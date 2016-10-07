@@ -1,0 +1,11 @@
+@charset "UTF-8";
+/*! CONTENT : layout/content.scss */
+.contentSec {
+	padding-bottom: 40px;
+	min-width: 1280px;
+	width: 100%;
+	overflow: hidden; 
+	background-color: #fff;}
+	.contentSec .inner {
+		margin: 0 auto;
+		width: 1224px; }

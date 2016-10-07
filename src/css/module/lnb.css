@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/*! LNB 요금계산기 : module/lnb.scss */
+.writeInfomationSec {
+	float: left;
+	width: 315px;
+	border: 1px solid #d3d3d3;
+	background-color: #fff;
+	color: #666; }
+	.writeInfomationSec h2.tit {
+		padding-top: 13px;
+		height: 52px;
+		background-color: #1091d0; 
+		text-align: center;
+		font-size: 24px;
+		color: #fff;}
+
+.writeInfomationSec .itemThumb {
+	position: relative;
+	width: 313px;
+	height: 368px; }
+	.writeInfomationSec .itemThumb > img {
+		width: 313px;
+		height: 368px; }
+	.writeInfomationSec .itemThumb > a.detail {
+		position: absolute;
+		top: 305px;
+		left: 90px; }
+
+.writeInfomationSec .itemReqeust {
+	padding-bottom: 25px; }
+	.writeInfomationSec .itemReqeust h3 {
+		padding-left: 24px;
+		background: url(../images/common/icoBlackCircle.gif) 10px 50% no-repeat;
+		font-weight: 700;
+		font-size: 16px;
+		color: #666; }
+	.writeInfomationSec .itemReqeust .telecomInfoSec {
+		margin: 0 auto;
+		padding-top: 30px;
+		padding-bottom: 22px;
+		width: 260px;
+		background: url(../images/common/bulPlus.gif) center bottom no-repeat; 
+		font-family: "dotum";}
+	.writeInfomationSec .itemReqeust .deviceInfoSec {
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 40px;
+		width: 260px;
+		background: url(../images/common/bulEqual.gif) center bottom no-repeat; 
+		font-family: "dotum";}
+	.writeInfomationSec .itemReqeust .tac {
+		box-sizing: border-box;
+		margin-top: 5px;
+		padding: 5px 10px;
+		width: 100%;
+		border-bottom: 1px solid #dadada; }
+		.writeInfomationSec .itemReqeust .tac:after, .writeInfomationSec .itemReqeust .tac:before {
+			display: table;
+			content: "";
+			line-height: 0; }
+		.writeInfomationSec .itemReqeust .tac:after {
+			clear: both; }
+		.writeInfomationSec .itemReqeust .tac dt {
+			float: left;
+			font-weight: 700; 
+			font-size: 14px;}
+		.writeInfomationSec .itemReqeust .tac dd {
+			float: right;
+			text-align: right;
+			font-weight: 700; 
+			font-size: 12px;}
+	.writeInfomationSec .itemReqeust .spec {
+		box-sizing: border-box;
+		margin-top: 5px;
+		padding: 10px 10px;
+		width: 100%;
+		height: 36px;
+		overflow: hidden;
+		border-radius: 5px; 
+		background: #8f8f8f;}
+		.writeInfomationSec .itemReqeust .spec dt {
+			float: left;
+			letter-spacing: -1px; 
+			font-weight: 700;
+			font-size: 14px;
+			color: #fff;}
+		.writeInfomationSec .itemReqeust .spec dd {
+			float: right;
+			text-align: right;
+			font-weight: 700; 
+			font-size: 14px;
+			color: #fff;}
+	.writeInfomationSec .itemReqeust .total {
+		box-sizing: border-box;
+		margin: 0 auto;
+		margin-top: 5px;
+		padding: 6px 10px;
+		width: 260px;
+		height: 57px;
+		overflow: hidden;
+		border-radius: 5px; 
+		background: #8f8f8f;}
+		.writeInfomationSec .itemReqeust .total dt {
+			float: left;
+			text-align: center;
+			font-weight: 700;
+			font-size: 16px;
+			color: #fff;
+			line-height: 1.4; }
+		.writeInfomationSec .itemReqeust .total dd {
+			float: right;
+			padding-top: 8px;
+			vertical-align: baseline; 
+			text-align: right;
+			font-size: 14px;
+			color: #fff;}
+		.writeInfomationSec .itemReqeust .total dd > strong {
+			font-size: 22px; }
+	.writeInfomationSec .itemReqeust .desc {
+		padding-top: 3px;
+		text-align: right;
+		font-size: 11px;
+		color: #ff725d; }
+	.writeInfomationSec .itemReqeust .text-md {
+		font-size: 14px !important; }
+	.writeInfomationSec .itemReqeust .text-minus {
+		color: #ff3301; }
+	.writeInfomationSec .itemReqeust .text-interest {
+		color: #006ff9; }
+	.writeInfomationSec .itemReqeust .help {
+		position: relative; 
+		vertical-align: middle;}
+
+.writeInfomationSec .happyPoint .point {
+	margin: 0 auto;
+	padding: 13px 0;
+	width: 284px;
+	border-bottom: 1px solid #d3d3d3;
+	text-align: center;
+	font-weight: 400; 
+	font-size: 20px;
+	color: #000;}
+	.writeInfomationSec .happyPoint .point > i {
+		color: #ff0000; }
+
+.writeInfomationSec .happyPoint .desc {
+	margin: 0 auto;
+	padding: 10px 0;
+	padding-left: 17px;
+	width: 284px;
+	text-indent: -17px;
+	font-size: 15px;
+	color: #666;
+	line-height: 1.3; }
+
+.component-tooltip {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+	z-index: 100;
+	box-sizing: border-box;
+	padding: 15px 10px;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #333; }
+
+.component-tooltip .btnClose {
+	position: absolute;
+	top: 0;
+	right: 0; }

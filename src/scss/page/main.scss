@@ -1,0 +1,10 @@
+
+/*! 메인페이지 : page/main.scss */
+.mainContentSec{
+  .inner{
+    >[class^=step-]{margin-top:20px;}
+    .itemsArticle{margin-top:35px;
+      .mod-phoneList{margin-top:15px;}
+    }
+  }
+}

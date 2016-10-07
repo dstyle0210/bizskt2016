@@ -3,13 +3,11 @@
 
 /*! RESET : reset/reset.scss */
 @import url(https://fonts.googleapis.com/earlyaccess/notosanskr.css);
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,canvas,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:none;border:0;vertical-align:baseline;font:inherit;font-size:100%}
-body,caption,img{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:none;vertical-align:baseline;font:inherit}
-body,img{margin:0;padding:0;border:0}
-body{font-family:"Noto Sans KR",sans-serif;line-height:1;font-size:62.5%}
-img{max-width:100%}
-caption,img{font-size:100%}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;outline:none;border:0;vertical-align:baseline;font:inherit;font-size:100%}
+img{margin:0;padding:0;max-width:100%;border:0}
+caption,img{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;outline:none;vertical-align:baseline;font:inherit;font-size:100%}
 html{height:100%}
+body{font-family:"Noto Sans KR",sans-serif;line-height:1}
 article,aside,details,dt,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
 ol,ul{list-style:none}
 blockquote,q{quotes:none}
