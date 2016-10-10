@@ -23,14 +23,14 @@ body{background-color:#666}
 .footerSec .infomation p.holiday{padding-top:5px;font-size:13px;color:#ff0}
 
 
-/*! HEADER : bizskt/header.scss */
+/*! HEADER : layout/header.scss */
 .headerSec{margin:0 auto;min-width:1280px;width:100%;height:90px;overflow:hidden;border-top:17px solid #f0f0f0;background-color:#fff}
 .headerSec .inner{margin:0 auto;width:1224px;height:73px;overflow:hidden}
 .headerSec h1{float:left;padding-top:10px;width:380px}
 .headerSec .gnb{float:left;padding-top:34px;width:844px}
 
 
-/*! GNB : bizskt/header.scss */
+/*! GNB : layout/header.scss */
 .gnb>ul{width:100%;overflow:hidden}
 .gnb>ul>li{float:left;padding-left:30px;height:30px}
 .gnb>ul>li>a{display:inline-block;padding-bottom:3px;height:30px;font-size:20px;color:#070606}

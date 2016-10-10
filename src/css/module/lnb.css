@@ -14,11 +14,48 @@
 		text-align: center;
 		font-size: 24px;
 		color: #fff;}
+	.writeInfomationSec .tac {
+		box-sizing: border-box;
+		margin-top: 5px;
+		padding: 5px 15px;
+		width: 100%;
+		border-bottom: 1px solid #dadada;
+		font-family: "dotum"; }
+		.writeInfomationSec .tac:after, .writeInfomationSec .tac:before {
+			display: table;
+			content: "";
+			line-height: 0; }
+		.writeInfomationSec .tac:after {
+			clear: both; }
+		.writeInfomationSec .tac dt {
+			float: left;
+			font-weight: 700; 
+			font-size: 14px;}
+		.writeInfomationSec .tac dd {
+			float: right;
+			text-align: right;
+			font-weight: 700; 
+			font-size: 12px;}
+	.writeInfomationSec .text-md {
+		font-size: 14px !important; }
+	.writeInfomationSec .text-minus {
+		color: #ff3301 !important; }
+	.writeInfomationSec .text-interest {
+		color: #006ff9; }
+	.writeInfomationSec .desc {
+		padding-top: 3px;
+		text-align: right;
+		font-size: 11px;
+		color: #ff725d; }
+	.writeInfomationSec .help {
+		position: relative; 
+		vertical-align: middle;}
 
 .writeInfomationSec .itemThumb {
 	position: relative;
 	width: 313px;
-	height: 368px; }
+	height: 368px;
+	overflow: hidden; }
 	.writeInfomationSec .itemThumb > img {
 		width: 313px;
 		height: 368px; }
@@ -49,27 +86,6 @@
 		width: 260px;
 		background: url(../images/common/bulEqual.gif) center bottom no-repeat; 
 		font-family: "dotum";}
-	.writeInfomationSec .itemReqeust .tac {
-		box-sizing: border-box;
-		margin-top: 5px;
-		padding: 5px 10px;
-		width: 100%;
-		border-bottom: 1px solid #dadada; }
-		.writeInfomationSec .itemReqeust .tac:after, .writeInfomationSec .itemReqeust .tac:before {
-			display: table;
-			content: "";
-			line-height: 0; }
-		.writeInfomationSec .itemReqeust .tac:after {
-			clear: both; }
-		.writeInfomationSec .itemReqeust .tac dt {
-			float: left;
-			font-weight: 700; 
-			font-size: 14px;}
-		.writeInfomationSec .itemReqeust .tac dd {
-			float: right;
-			text-align: right;
-			font-weight: 700; 
-			font-size: 12px;}
 	.writeInfomationSec .itemReqeust .spec {
 		box-sizing: border-box;
 		margin-top: 5px;
@@ -117,20 +133,6 @@
 			color: #fff;}
 		.writeInfomationSec .itemReqeust .total dd > strong {
 			font-size: 22px; }
-	.writeInfomationSec .itemReqeust .desc {
-		padding-top: 3px;
-		text-align: right;
-		font-size: 11px;
-		color: #ff725d; }
-	.writeInfomationSec .itemReqeust .text-md {
-		font-size: 14px !important; }
-	.writeInfomationSec .itemReqeust .text-minus {
-		color: #ff3301; }
-	.writeInfomationSec .itemReqeust .text-interest {
-		color: #006ff9; }
-	.writeInfomationSec .itemReqeust .help {
-		position: relative; 
-		vertical-align: middle;}
 
 .writeInfomationSec .happyPoint .point {
 	margin: 0 auto;
@@ -139,20 +141,52 @@
 	border-bottom: 1px solid #d3d3d3;
 	text-align: center;
 	font-weight: 400; 
-	font-size: 20px;
+	font-size: 22px;
 	color: #000;}
 	.writeInfomationSec .happyPoint .point > i {
 		color: #ff0000; }
+	.writeInfomationSec .happyPoint .point.type-noBorder {
+		padding-bottom: 0; 
+		border-bottom: 0;}
 
 .writeInfomationSec .happyPoint .desc {
 	margin: 0 auto;
 	padding: 10px 0;
-	padding-left: 17px;
-	width: 284px;
-	text-indent: -17px;
+	padding-left: 18px;
+	width: 275px;
+	text-align: left;
+	text-indent: -18px;
 	font-size: 15px;
 	color: #666;
 	line-height: 1.3; }
+
+.writeInfomationSec .happyPoint .accList {
+	margin: 0 auto;
+	width: 284px; }
+	.writeInfomationSec .happyPoint .accList .mod-accItem {
+		position: relative;
+		padding: 10px 0 10px 140px;
+		min-height: 150px;
+		width: 100%;
+		overflow: hidden; 
+		border-bottom: 1px solid #dadada;}
+		.writeInfomationSec .happyPoint .accList .mod-accItem .thumb {
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 130px;
+			height: 130px; }
+			.writeInfomationSec .happyPoint .accList .mod-accItem .thumb > img {
+				width: 130px;
+				height: 130px; }
+		.writeInfomationSec .happyPoint .accList .mod-accItem label {
+			display: inline-block;
+			padding-top: 15px;
+			text-align: left; }
+		.writeInfomationSec .happyPoint .accList .mod-accItem select {
+			width: 60px; 
+			height: 25px;
+			border: 1px solid #c2c2c2;}
 
 .component-tooltip {
 	display: none;
@@ -170,3 +204,28 @@
 	position: absolute;
 	top: 0;
 	right: 0; }
+
+/*! LNB : 요금정보표 (custom) : module/lnb.scss */
+.writeInfomationSec.type-price .itemThumb {
+	height: 300px; }
+
+.writeInfomationSec.type-price .itemPriceTable {
+	margin: 0 auto;
+	padding-bottom: 15px; 
+	width: 260px;}
+	.writeInfomationSec.type-price .itemPriceTable > .tac:last-child {
+		border-bottom: 0; }
+	.writeInfomationSec.type-price .itemPriceTable > h3 {
+		text-align: center;
+		font-size: 21px;
+		color: #000; }
+
+.writeInfomationSec.type-price .selectedPriceType {
+	margin: 0 auto;
+	width: 95%; }
+	.writeInfomationSec.type-price .selectedPriceType > p {
+		padding: 15px 0;
+		text-align: center;
+		letter-spacing: -1px;
+		font-size: 21px;
+		color: #000; }

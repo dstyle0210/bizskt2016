@@ -1,12 +1,12 @@
 @import "../_lib/val";
 
-/*! HEADER : bizskt/header.scss */
+/*! HEADER : layout/header.scss */
 .headerSec{margin:0 auto;width:100%;min-width:$width-wrap;height:90px;overflow:hidden;border-top:17px solid #f0f0f0;background-color:#fff;
   .inner{margin:0 auto;width:$width-cont;height:73px;overflow:hidden;}
   h1{float:left;padding-top:10px;width:380px;}
   .gnb{float:left;padding-top:34px;width:$width-cont - 380px;}
 }
-/*! GNB : bizskt/header.scss */
+/*! GNB : layout/header.scss */
 .gnb{
   >ul{width:100%;overflow:hidden;
     >li{float:left;height:30px;padding-left:30px;

@@ -15,6 +15,7 @@ var Mod = {
             });
         };
     },
+    // 악세사리 리스트 서포트 : Modernizr 필수
     accList:function(){
         var modAccList = $(".mod-accList");
         if (modAccList.length && !Modernizr.nthchild) {

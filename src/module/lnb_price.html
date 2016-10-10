@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>BIZ SKT</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/module.css">
+    <link rel="stylesheet" href="../css/layout.css">
+
+    <script src="../lib/modernizr/modernizr-custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.4.1/jquery-migrate.min.js"></script>
+    <script src="../js/mod.js"></script>
+    <script src="../js/component.js"></script> <!-- 기존 biz사이트 js라이브러리 그대로 상속 -->
+</head>
+<body>
+
+<!-- LNB 요금정보표 : 기본 as-is 로 작성됨 -->
+<div class="writeInfomationSec type-price">
+    <h2 class="tit">선택한 기종</h2>
+    <div class="itemThumb"><img src="../images/temp/@detail.gif" width="313" height="368" alt=""/></div>
+
+    <div class="itemPriceTable">
+        <h3>갤럭시 S7 엣지(SM-G935S)</h3>
+        <dl class="tac">
+            <dt>가입유형</dt>
+            <dd><span class="text-md">(번호이동)</span></dd>
+        </dl>
+        <dl class="tac">
+            <dt>출고가</dt>
+            <dd><span class="text-md">924,000원</span></dd>
+        </dl>
+        <dl class="tac">
+            <dt>공시지원금
+				<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help1" style="cursor: pointer;">
+                    <span class="component-tooltip" id="help1" style="width:400px;">
+                        <a href="#" class="btnClose"
+                           onclick="control_tooltip.close();return false;"><img
+                                src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+                        <span class="cont"><br>
+                            * 판매점이나 대리점에서는 이동통신사가 공시한 지원금의 15%이내에서 추가 지원금 제공 가능합니다.
+                        </span>
+                    </span>
+                </span>
+            </dt>
+            <dd><span class="text-minus">-924,000원</span></dd>
+        </dl>
+        <dl class="tac">
+            <dt>추가지원금
+				<span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help2" style="cursor: pointer;">
+                    <span class="component-tooltip" id="help2" style="width:400px;">
+                        <a href="#" class="btnClose"
+                           onclick="control_tooltip.close();return false;"><img
+                                src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+                        <span class="cont"><br>
+                            * 판매점이나 대리점에서는 이동통신사가 공시한 지원금의 15%이내에서 추가 지원금 제공 가능합니다.
+                        </span>
+                    </span>
+                </span>
+            </dt>
+            <dd><span class="text-minus">-924,000원</span></dd>
+        </dl>
+        <dl class="tac">
+            <dt>할부원금</dt>
+            <dd><span class="text-md">695,000원</span></dd>
+        </dl>
+        <dl class="tac">
+            <dt>월 단말기 할부금
+                <span class="help"><img src="../images/common/icoHelp.gif" alt="" tooltip="#help3" style="cursor: pointer;">
+                    <span class="component-tooltip" id="help3" style="width:400px;">
+                        <a href="#" class="btnClose"
+                           onclick="control_tooltip.close();return false;"><img
+                                src="../images/common/btnTooltipClose.gif" alt="닫기"></a>
+                        <span class="cont"><br>
+                            * 판매점이나 대리점에서는 이동통신사가 공시한 지원금의 15%이내에서 추가 지원금 제공 가능합니다.
+                        </span>
+                    </span>
+                </span>
+            </dt>
+            <dd>95,000원</dd>
+        </dl>
+    </div>
+    <h2 class="tit">선택한 요금제</h2>
+    <div class="selectedPriceType">
+        <p>band59요금제 <span class="text-minus">(65,860원/월)</span></p>
+    </div>
+    <h2 class="tit">해피포인트</h2>
+    <div class="happyPoint">
+        <p class="point">해피포인트증정: <i>20,000 point</i></p>
+        <div class="accList">
+
+            <!-- 악세사리 모듈과 (버튼을 제외한) 동일한 구조입니다. -->
+            <div class="mod-accItem">
+                <div class="thumb"><img src="../images/temp/@acc.jpg" alt=""></div>
+                <label for="">[슈피겐] 차량용충전기 1,1000 point</label>
+                <div class="act">
+                    <select name="" id="">
+                        <option value="">1</option>
+                    </select>
+                    <a href="#"><img src="../images/common/btnAccDel.gif" alt=""></a>
+                </div>
+            </div>
+            <!-- // 악세사리 모듈과 (버튼을 제외한) 동일한 구조입니다. -->
+
+            <!-- 악세사리 모듈과 (버튼을 제외한) 동일한 구조입니다. -->
+            <div class="mod-accItem">
+                <div class="thumb"><img src="../images/temp/@acc.jpg" alt=""></div>
+                <label for="">[슈피겐] 차량용충전기 1,1000 point</label>
+                <div class="act">
+                    <select name="" id="">
+                        <option value="">1</option>
+                    </select>
+                    <a href="#"><img src="../images/common/btnAccDel.gif" alt=""></a>
+                </div>
+            </div>
+            <!-- // 악세사리 모듈과 (버튼을 제외한) 동일한 구조입니다. -->
+
+        </div>
+        <p class="point type-noBorder">잔여 해피포인트: <i>1,000 point</i></p>
+        <p class="desc">※ 사은품 신청완료 후 잔여 해피포인트는 자동소멸됩니다.</p>
+    </div>
+
+</div>
+<!-- // LNB 요금정보표 : 기본 as-is 로 작성됨 -->
+
+</body>
+</html>

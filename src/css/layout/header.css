@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*! HEADER : bizskt/header.scss */
+/*! HEADER : layout/header.scss */
 .headerSec {
 	margin: 0 auto;
 	min-width: 1280px;
@@ -22,7 +22,7 @@
 		padding-top: 34px;
 		width: 844px; }
 
-/*! GNB : bizskt/header.scss */
+/*! GNB : layout/header.scss */
 .gnb > ul {
 	width: 100%;
 	overflow: hidden; }
