@@ -9,11 +9,15 @@
 .mod-accItem .act *{vertical-align:middle}
 .mod-accItem .act [type=checkbox]{width:20px;height:20px}
 .mod-accItem .act a{display:inline-block;padding-left:5px}
-.mod-accList{width:100%;overflow:hidden}
+.mod-accList{margin:0 auto;width:100%;overflow:hidden}
+.mod-accList.type-5up{max-width:850px}
+.mod-accList.type-5up .mod-accItem:nth-child(6n+0){margin-left:0}
+.mod-accList.type-5up .mod-accItem:nth-child(-n+5){margin-top:0}
+.mod-accList.type-7up{max-width:1200px}
+.mod-accList.type-7up .mod-accItem:nth-child(8n+0){margin-left:0}
+.mod-accList.type-7up .mod-accItem:nth-child(-n+7){margin-top:0}
 .mod-accList .mod-accItem{float:left;margin-top:25px;margin-left:25px}
 .mod-accList .mod-accItem:first-child{margin-left:0}
-.mod-accList .mod-accItem:nth-child(6n+0){margin-left:0}
-.mod-accList .mod-accItem:nth-child(-n+5){margin-top:0}
 .mod-accList .mod-accItem.no-nthchild-left{margin-left:0}
 .mod-accList .mod-accItem.no-nthchild-top{margin-top:0}
 

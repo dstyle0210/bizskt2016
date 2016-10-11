@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*! 사은품 선택 : page/step3.scss */
+.step3ContentSec .inner > [class^=step-] {
+	margin-top: 20px; }
+
+.step3ContentSec .inner .offerSec {
+	margin-top: 10px; }
+
+.accSelectFormSec {
+	width: 100%; }
+	.accSelectFormSec .accSelectFieldsetSec {
+		box-sizing: border-box;
+		min-height: 860px; 
+		width: 100%;}
+	.accSelectFormSec .submitSec {
+		margin-top: 20px;
+		padding-top: 35px;
+		border-top: 1px solid #d3d3d3;
+		text-align: center; }

@@ -1,0 +1,12 @@
+@import "../_lib/val";
+
+/*! 신청영역(step2 , step3) 공통 폼 */
+.offerSec{display:table;width:$width-cont;border:1px solid #d3d3d3;min-height:1114px;background-color: #f9f9f9;
+  >*{vertical-align:top;}
+  .lnbSec{display:table-cell;position:relative;width:315px;background-color: #fff;border-right:1px solid #d3d3d3;overflow:hidden;
+    .writeInfomationSec{position:relative;top:0px;left:0px;border:0;
+      &.fixed{position:absolute;top:-1px;left:-1px;border:1px solid #d3d3d3;border-width:1px 1px 0 1px;}
+    }
+  }
+  .rightSec{display:table-cell;padding:20px 15px 15px;width:$width-cont - 313px;}
+}
