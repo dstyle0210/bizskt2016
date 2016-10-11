@@ -39,12 +39,14 @@
 			margin-left: 0; }
 		.mod-accList.type-5up .mod-accItem:nth-child(-n+5) {
 			margin-top: 0; }
-	.mod-accList.type-7up {
-		max-width: 1200px; }
-		.mod-accList.type-7up .mod-accItem:nth-child(8n+0) {
-			margin-left: 0; }
-		.mod-accList.type-7up .mod-accItem:nth-child(-n+7) {
-			margin-top: 0; }
+	.mod-accList.type-6up {
+		max-width: 1075px; }
+		.mod-accList.type-6up .mod-accItem {
+			margin-left: 35px; }
+			.mod-accList.type-6up .mod-accItem:nth-child(7n+0) {
+				margin-left: 0; }
+			.mod-accList.type-6up .mod-accItem:nth-child(-n+6) {
+				margin-top: 0; }
 	.mod-accList .mod-accItem {
 		float: left;
 		margin-top: 25px;

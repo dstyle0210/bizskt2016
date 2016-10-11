@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+/*! 사은품목록(전시용) : page/acc.scss */
+.accContentSec .inner > [class^=step-] {
+	margin-top: 20px; }
+
+.accContentSec .inner .accListWrap {
+	margin-top: 10px; }
+
+.accContentSec .inner p.pageDesc {
+	margin: 0 auto;
+	padding-bottom: 15px;
+	width: 1075px; }
+
+.accListWrap {
+	padding: 20px 15px 100px;
+	width: 1224px;
+	border: 1px solid #d3d3d3;
+	background-color: #f9f9f9; }

@@ -15,6 +15,7 @@
 }
 
 .mod-accList{margin:0 auto;width:100%;overflow:hidden;
+  $gap:25px; // 아이템들간의 간격
   &.type-5up{
     max-width:(150px * 5) + (25px * 4);
     .mod-accItem{
@@ -22,15 +23,15 @@
       &:nth-child(-n+5){margin-top:0;}
     }
   }
-  &.type-7up{
-    max-width:(150px * 7) + (25px * 6);
+  &.type-6up{
+    max-width:(150px * 6) + (35px * 5);
     .mod-accItem{
-      &:nth-child(8n+0){margin-left:0;}
-      &:nth-child(-n+7){margin-top:0;}
+      margin-left:$gap+10px;
+      &:nth-child(7n+0){margin-left:0;}
+      &:nth-child(-n+6){margin-top:0;}
     }
   }
   .mod-accItem{
-    $gap:25px; // 아이템들간의 간격
     float:left;margin-top:$gap;margin-left:$gap;
     &:first-child{margin-left:0;}
     // nth-child Support

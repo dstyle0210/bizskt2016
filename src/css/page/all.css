@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-/*! 신청영역(step2 , step3) 공통 폼 */
+/*! 신청영역(step2 , step3) 공통 폼 : page/all.scss */
 .offerSec {
 	display: table;
 	min-height: 1114px;

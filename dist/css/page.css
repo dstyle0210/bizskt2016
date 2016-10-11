@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
 
-/*! 신청영역(step2 , step3) 공통 폼 */
+/*! 사은품목록(전시용) : page/acc.scss */
+.accContentSec .inner>[class^=step-]{margin-top:20px}
+.accContentSec .inner .accListWrap{margin-top:10px}
+.accContentSec .inner p.pageDesc{margin:0 auto;padding-bottom:15px;width:1075px}
+.accListWrap{padding:20px 15px 100px;width:1224px;border:1px solid #d3d3d3;background-color:#f9f9f9}
+
+
+/*! 신청영역(step2 , step3) 공통 폼 : page/all.scss */
 .offerSec{display:table;min-height:1114px;width:1224px;border:1px solid #d3d3d3;background-color:#f9f9f9}
 .offerSec>*{vertical-align:top}
 .offerSec .lnbSec{display:table-cell;position:relative;width:315px;overflow:hidden;border-right:1px solid #d3d3d3;background-color:#fff}
@@ -57,6 +64,7 @@
 /*! 사은품 선택 : page/step3.scss */
 .step3ContentSec .inner>[class^=step-]{margin-top:20px}
 .step3ContentSec .inner .offerSec{margin-top:10px}
+.step3ContentSec .inner .pageDesc{padding-bottom:15px}
 .accSelectFormSec{width:100%}
 .accSelectFormSec .accSelectFieldsetSec{box-sizing:border-box;min-height:860px;width:100%}
 .accSelectFormSec .submitSec{margin-top:20px;padding-top:35px;border-top:1px solid #d3d3d3;text-align:center}
