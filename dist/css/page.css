@@ -17,6 +17,12 @@
 .offerSec .rightSec{display:table-cell;padding:20px 15px 15px;width:911px}
 
 
+/*! 인터넷 : page/internet.scss */
+.internetContentSec .inner>[class^=tab-]{margin-top:20px}
+.internetContentSec .inner .offerSec{margin-top:10px}
+.internetContentSec .paperSec{padding-top:15px;text-align:center}
+
+
 /*! 메인페이지 : page/main.scss */
 .mainContentSec .inner>[class^=step-]{margin-top:20px}
 .mainContentSec .inner .itemsArticle{margin-top:35px}

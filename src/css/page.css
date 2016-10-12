@@ -55,6 +55,19 @@
 
 
 
+/*! 인터넷 : page/internet.scss */
+.internetContentSec .inner > [class^=tab-] {
+	margin-top: 20px; }
+
+.internetContentSec .inner .offerSec {
+	margin-top: 10px; }
+
+.internetContentSec .paperSec {
+	padding-top: 15px;
+	text-align: center; }
+
+
+
 /*! 메인페이지 : page/main.scss */
 .mainContentSec .inner > [class^=step-] {
 	margin-top: 20px; }

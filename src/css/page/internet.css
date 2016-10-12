@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*! 인터넷 : page/internet.scss */
+.internetContentSec .inner > [class^=tab-] {
+	margin-top: 20px; }
+
+.internetContentSec .inner .offerSec {
+	margin-top: 10px; }
+
+.internetContentSec .paperSec {
+	padding-top: 15px;
+	text-align: center; }

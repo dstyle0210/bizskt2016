@@ -1,0 +1,10 @@
+@import "../_lib/val";
+
+/*! 인터넷 : page/internet.scss */
+.internetContentSec{
+  .inner{
+    >[class^=tab-]{margin-top:20px;}
+    .offerSec{margin-top:10px;}
+  }
+  .paperSec{padding-top:15px;text-align:center;}
+}

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 
-/*! 핸드폰 리스트 아이템 : module/phoneItem.scss */
+/*! 악세사리 리스트 아이템 : module/accItem.scss */
 .mod-accItem {
 	width: 150px; }
 	.mod-accItem .thumb {
@@ -130,8 +130,10 @@
 			font-size: 12px;}
 	.writeInfomationSec .text-md {
 		font-size: 14px !important; }
-	.writeInfomationSec .text-minus {
+	.writeInfomationSec .text-minus, .writeInfomationSec .text-required {
 		color: #ff3301 !important; }
+	.writeInfomationSec .text-sub {
+		color: #999 !important; }
 	.writeInfomationSec .text-interest {
 		color: #006ff9; }
 	.writeInfomationSec .desc {
@@ -321,6 +323,74 @@
 		letter-spacing: -1px;
 		font-size: 21px;
 		color: #000; }
+
+/*! LNB 유선상품가입 : module/lnb.scss */
+.writeInfomationSec.type-internet .internetDesc {
+	padding: 10px 20px;
+	border-bottom: 1px solid #d3d3d3;
+	font-size: 14px;
+	font-family: "dotum";
+	color: #494949;
+	line-height: 1.4; }
+
+.writeInfomationSec.type-internet .internetTac {
+	width: 100%;
+	overflow: hidden;
+	font-size: 14px;
+	font-family: "dotum"; }
+	.writeInfomationSec.type-internet .internetTac * {
+		box-sizing: border-box; }
+	.writeInfomationSec.type-internet .internetTac table {
+		table-layout: fixed; }
+	.writeInfomationSec.type-internet .internetTac th {
+		background-color: #e7e7e7;
+		text-align: left; 
+		letter-spacing: -1px;
+		font-weight: 700;}
+	.writeInfomationSec.type-internet .internetTac th, .writeInfomationSec.type-internet .internetTac td {
+		padding: 10px;
+		border-bottom: 1px solid #d3d3d3;
+		vertical-align: middle;
+		line-height: 1.4; }
+	.writeInfomationSec.type-internet .internetTac input[type=text] {
+		width: 100%;
+		height: 30px; 
+		border: 1px solid #c0c0c0;}
+	.writeInfomationSec.type-internet .internetTac a.addressSearch {
+		display: inline-block;
+		padding: 4px 10px;
+		height: 24px;
+		background-color: #686868;
+		font-weight: 700; 
+		color: #fff;}
+
+.writeInfomationSec.type-internet .agree {
+	padding: 20px 10px;
+	border-bottom: 1px solid #d3d3d3; }
+	.writeInfomationSec.type-internet .agree h3 {
+		padding-bottom: 10px; 
+		font-weight: 700;
+		font-size: 14px;
+		color: #333;}
+	.writeInfomationSec.type-internet .agree li {
+		padding-bottom: 5px; }
+
+.writeInfomationSec.type-internet .agreeCheck {
+	padding: 10px 0;
+	text-align: center; }
+	.writeInfomationSec.type-internet .agreeCheck * {
+		vertical-align: middle; }
+	.writeInfomationSec.type-internet .agreeCheck input[type=checkbox] {
+		width: 20px;
+		height: 20px; }
+	.writeInfomationSec.type-internet .agreeCheck label {
+		font-weight: 700; }
+
+.writeInfomationSec.type-internet .btnSec {
+	text-align: center; }
+
+.writeInfomationSec.type-internet .outboundBnr {
+	padding: 15px 0; }
 
 
 
