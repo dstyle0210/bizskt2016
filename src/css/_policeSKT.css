@@ -1,0 +1,305 @@
+@font-face{ font-family: ngwoff;src:url(/common/css/NanumGothic.woff); }
+@font-face{ font-family: ngeot;src:url(/common/css/NanumGothic.eot); }
+
+/*! 컴포넌트 : 고객센터용 게시판 리스트(공통) */
+.component-customer-list{position:relative;padding-top:20px;width:100%;overflow:hidden}
+.component-customer-list table.listTable{width:100%;table-layout:fixed}
+.component-customer-list table.listTable>thead th{padding-bottom:10px;font-size:13px;text-align:center;border-bottom:2px solid #afafaf;color:#333;line-height:1}
+.component-customer-list table.listTable>thead th.title{border-bottom:2px solid #e04500}
+.component-customer-list table.listTable>tbody td{padding:8px 0;border-bottom:1px solid #d0d0d0;line-height:1.1}
+.component-customer-list table.listTable>tbody td.index{text-align:center}
+.component-customer-list table.listTable>tbody td.title a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;zoom:1;display:inline-block;max-width:98%;vertical-align:middle}
+.component-customer-list table.listTable>tbody td.title a.notice{color:#ff4800}
+.component-customer-list table.listTable>tbody td.title *{vertical-align:middle}
+.component-customer-list table.listTable>tbody td.date,.component-customer-list table.listTable>tbody td.file,.component-customer-list table.listTable>tbody td.writer{text-align:center}
+.component-customer-list table.listTable>tbody td.colspan{padding:15px 0;text-align:center}
+
+/*! 컴포넌트 : 고객센터용 게시판 리스트(FAQ) */
+
+
+/*! 컴포넌트 : 고객센터용 게시판 페이징 */
+.component-customer-paging{padding-top:20px;width:100%;text-align:center}
+.component-customer-paging *{vertical-align:top}
+.component-customer-paging .numSec{display:inline-block}
+.component-customer-paging .numSec>a:first-child>span{border-left:0}
+.component-customer-paging a{display:inline-block;box-sizing:border-box;height:20px;font-size:11px}
+.component-customer-paging a>span{display:inline-block;line-height:1;text-align:center}
+.component-customer-paging a.num{padding-top:3px}
+.component-customer-paging a.num>span{padding:0 9px 0 13px;height:12px;border-left:1px solid #333;overflow:hidden}
+.component-customer-paging a.first{background:url(/images/common/bul/bulPaging.gif) no-repeat}
+.component-customer-paging a.prev{background:url(/images/common/bul/bulPaging.gif) -20px 0 no-repeat}
+.component-customer-paging a.next{background:url(/images/common/bul/bulPaging.gif) -40px 0 no-repeat}
+.component-customer-paging a.last{background:url(/images/common/bul/bulPaging.gif) -60px 0 no-repeat}
+.component-customer-paging a.first,.component-customer-paging a.last,.component-customer-paging a.next,.component-customer-paging a.prev{width:20px}
+.component-customer-paging a.first>span,.component-customer-paging a.last>span,.component-customer-paging a.next>span,.component-customer-paging a.prev>span{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);border:0}
+
+
+/*! 컴포넌트 : 고객센터용 게시판 상세 */
+.component-customer-view{padding-top:20px;width:100%;overflow:hidden}
+.component-customer-view>table.viewTable{width:100%;table-layout:fixed;border-top:2px solid #e04500}
+.component-customer-view>table.viewTable>tbody>tr>td,.component-customer-view>table.viewTable>tbody>tr>th{padding:7px 0;font-size:13px;border-bottom:1px solid #d0d0d0}
+.component-customer-view>table.viewTable>tbody>tr>th{text-align:center}
+
+
+/*! 컴포넌트 : 고객센터용 게시판 쓰기 */
+.component-customer-write{padding-top:20px;width:100%;overflow:hidden}
+.component-customer-write>table.viewTable{width:100%;table-layout:fixed;border-top:2px solid #e04500}
+.component-customer-write>table.viewTable>tbody>tr>td,.component-customer-write>table.viewTable>tbody>tr>th{padding:7px 0;font-size:13px;border-bottom:1px solid #d0d0d0}
+.component-customer-write>table.viewTable>tbody>tr>th{text-align:center}
+.component-customer-write input[type=password].text,.component-customer-write input[type=text].text,.component-customer-write textarea.textarea{border:1px solid #666}
+
+
+/*! 컴포넌트 : 상품 아이템 */
+.component-item{display:block;position:relative;width:242px;height:315px}
+.component-item .thumb{box-sizing:border-box;width:242px;height:222px;overflow:hidden}
+.component-item .thumb img{width:242px;height:222px;border-radius:5px}
+.component-item .label{position:absolute;top:0;right:0;padding:10px 10px 0 0;width:55px}
+.component-item .label img{margin-bottom:5px}
+.component-item .itemName{padding-top:8px;text-align:center;font-size:16px;color:#090909}
+.component-item .itemName .pin{font-size:15px;color:#0878b0}
+.component-item .goto{padding-top:10px;text-align:center}
+.component-item.on .thumb{border:2px solid #454545;border-radius:5px}
+.component-item.on .thumb>img{margin:-2px 0 0 -2px}
+
+/*! 컴포넌트 : 상품 아이템 리스트 */
+.component-list{margin:0 auto;width:1001px;overflow:hidden}
+.component-list>ul{width:1012px;overflow:hidden}
+.component-list>ul>li{float:left;padding-right:11px}
+
+
+/*! 컴포넌트 : 비밀번호 입력 */
+#pwcheckWrap{position:absolute;top:0;left:0;width:100%;z-index:101}
+.component-pwcheck{margin:0 auto;padding:5px;width:300px;border:3px solid #ff3030;border-radius:5px;background:#fff}
+.component-pwcheck .tit{width:100%;overflow:hidden}
+.component-pwcheck .tit>h5{float:left;width:250px;text-align:center;color:#fff;font-size:18px;line-height:41px;background:#ff3030;height:46px;border:1px solid #ccc;border-radius:3px}
+.component-pwcheck .tit>a{float:right}
+.component-pwcheck .form{width:100%;overflow:hidden;padding-top:5px}
+
+
+/*! 컴포넌트 : 검색영역 */
+.component-customer-searchForm>label{padding-right:15px;font-size:13px}
+.component-customer-searchForm>select{height:25px}
+.component-customer-searchForm>input{box-sizing:border-box;height:25px}
+
+
+/*! 컴포넌트 : 타이틀 */
+.component-title{position:relative;margin-bottom:10px;width:100%;height:47px;overflow:hidden;background-color:#56b6e6}
+.component-title>h3{box-sizing:border-box;padding-top:2px;width:240px;height:47px;background-color:#292929;color:#fff;font-size:26px}
+.component-title>h3>span{display:inline-block;padding-left:30px;background:url(/images/common/bul/bulDeviceList.png) 15px 10px no-repeat}
+.component-title>h3>span>img{margin-top:10px}
+.component-title .comment{position:absolute;top:15px;right:128px}
+.component-title .more{position:absolute;top:2px;right:20px}
+
+/*! 컴포넌트 : 고객센터 타이틀 */
+.component-customer-title{position:relative;margin-top:30px;width:100%;height:40px;overflow:hidden}
+.component-customer-title h3{width:100%;height:34px;border-bottom:1px solid #bcbcbc}
+.component-customer-title h3 span{font-size:26px;font-weight:700;color:#ff3f3f;line-height:1}
+.component-customer-title .tabSec{position:absolute;top:0;right:0}
+.component-customer-title .tabSec>li{display:inline-block;margin-left:2px;padding-bottom:5px}
+.component-customer-title .tabSec>li>a{display:inline-block;padding-top:5px;box-sizing:border-box;width:90px;height:35px;border:1px solid #bcbcbc;color:#676767;font-size:13px;text-align:center}
+.component-customer-title .tabSec>li.on{background:url(/images/common/bul/bulBoardTabArrow.gif) center bottom no-repeat}
+.component-customer-title .tabSec>li.on>a{border:1px solid #4b4b4b;color:#fff;background:#4b4b4b}
+
+
+/*! 컴포넌트 : 툴팁 */
+.component-tooltip{display:none;position:absolute;top:20px;left:0;padding:15px 10px;box-sizing:border-box;background:#fff;border:1px solid #ccc;z-index:100;color:#333}
+.component-tooltip .btnClose{position:absolute;top:0;right:0}
+
+
+
+/*! 레이어 : 상담신청 */
+.layer-requestOutbound{box-sizing:border-box;padding:13px 21px 24px 10px;width:420px;height:590px;border-radius:3px;background-image:url(/images/layer/bgRequestOutbound.png)}
+.layer-requestOutbound .inner{position:relative;box-sizing:border-box;padding:20px;width:389px;height:553px;overflow:hidden}
+.layer-requestOutbound .close{position:absolute;top:10px;right:10px}
+.layer-requestOutbound h2{font-size:23px;color:#333;font-weight:700}
+.layer-requestOutbound .comment,.layer-requestOutbound .name,.layer-requestOutbound .phone{margin-top:10px;border:1px solid #ccc;border-radius:3px;padding:5px}
+.layer-requestOutbound .comment *,.layer-requestOutbound .name *,.layer-requestOutbound .phone *{vertical-align:top}
+.layer-requestOutbound .comment label,.layer-requestOutbound .name label,.layer-requestOutbound .phone label{display:inline-block;padding-top:5px;padding-right:10px;width:65px;text-align:right;font-size:18px;letter-spacing:-1px}
+.layer-requestOutbound .comment input[type=text],.layer-requestOutbound .name input[type=text],.layer-requestOutbound .phone input[type=text]{margin-top:5px;width:240px;border:0;font-size:14px}
+.layer-requestOutbound .comment textarea,.layer-requestOutbound .name textarea,.layer-requestOutbound .phone textarea{width:100%;height:170px;border:0;font-size:14px}
+.layer-requestOutbound .agree{padding-top:5px;margin-top:5px;height:30px;font-size:16px;text-align:center}
+.layer-requestOutbound .agree label{display:inline-block;padding-left:30px;background-repeat:no-repeat}
+.layer-requestOutbound .agree input+label{background-image:url(/images/layer/chk.gif)}
+.layer-requestOutbound .agree input:checked+label{background-image:url(/images/layer/chkOn.gif)}
+.layer-requestOutbound .agreeDesc{margin-top:5px;box-sizing:border-box;padding:5px;width:100%;height:70px;font-size:12px;overflow-y:scroll;border:1px solid #ccc}
+.layer-requestOutbound .btnSec{padding-top:10px}
+
+
+/*! 풋터영역 */
+.footerSec{padding:10px 0;width:100%;border-top:1px solid #d7d7d7}
+.footerSec .innerSec{margin:0 auto;width:1250px;overflow:hidden}
+.footerSec .innerSec>div.logo{float:right}
+.footerSec .innerSec>p.company{float:right;padding-top:11px;padding-right:20px;font-size:14px;color:#656565}
+
+/*! 레이어 대기 */
+.layerBasket{display:none}
+
+
+/*! 레이아웃 : 상단,GNB */
+.headerSec{width:100%;height:50px;border-bottom:1px solid #d3d3d3}
+.headerSec .innerSec{margin:0 auto;width:1250px;overflow:hidden}
+.headerSec .innerSec .logoSec{float:left;width:237px;text-align:center}
+.headerSec .innerSec .gnbSec{float:left;width:1003px;padding-left:10px}
+.headerSec .innerSec .gnbSec ul{width:100%;overflow:hidden}
+.headerSec .innerSec .gnbSec ul li{float:left;padding:0 17px;text-align:center;background:url(/images/layout/header/lineGnb.gif) 0 20px no-repeat}
+.headerSec .innerSec .gnbSec ul li a{display:inline-block;padding:15px 3px 16px;line-height:1;font-size:18px;color:#000}
+.headerSec .innerSec .gnbSec ul li.on a{color:#f0201e;border-bottom:2px solid #f0201e}
+.headerSec .innerSec .gnbSec ul li:first-child{background:0 0}
+
+
+/*! 레이아웃 : LNB */
+.lnbSec{position:relative;box-sizing:border-box;padding:4px 0;width:237px;overflow:hidden;border:1px solid #cfcfcf;border-radius:3px}
+.lnbSec .topBnr{margin:0 auto;padding-bottom:15px;width:228px}
+.lnbSec .topBnr>a{display:inline-block;width:228px;font-size:1px;line-height:1px}
+.lnbSec .topBnr>a>img{width:228px;height:auto;border-radius:3px}
+.lnbSec .requestOutboundWrap{width:235px;height:245px;overflow:hidden;border-top:1px solid #cfcfcf;border-bottom:1px solid #cfcfcf;background:url(/images/layout/lnb/bgRequestOutBround.gif) no-repeat}
+.lnbSec .requestOutboundWrap fieldset{position:relative;width:235px;height:245px}
+.lnbSec .requestOutboundWrap fieldset .name,.lnbSec .requestOutboundWrap fieldset .phone{display:inline-block;position:absolute;left:84px;width:134px;height:28px}
+.lnbSec .requestOutboundWrap fieldset .name input,.lnbSec .requestOutboundWrap fieldset .phone input{background:0 0;border:0;font-size:12px;color:#666}
+.lnbSec .requestOutboundWrap fieldset .phone{top:107px}
+.lnbSec .requestOutboundWrap fieldset .name{top:146px}
+.lnbSec .requestOutboundWrap fieldset .request{position:absolute;top:188px;left:13px;width:209px;height:39px}
+.lnbSec .requestOutboundWrap fieldset .request>a{display:inline-block;width:209px;height:39px}
+.lnbSec .requestOutboundWrap fieldset .request>a img{width:209px;height:39px}
+.lnbSec .lnbWrap{margin:0 auto;padding-bottom:50px;width:212px}
+.lnbSec .lnbWrap>ul{width:100%;overflow:hidden}
+.lnbSec .lnbWrap>ul>li{border-bottom:1px dashed #d1d1d1;padding-top:10px;padding-bottom:8px}
+.lnbSec .lnbWrap>ul>li *{vertical-align:middle}
+.lnbSec .lnbWrap>ul>li>a{display:inline-block;box-sizing:border-box;width:100%;height:34px;padding-top:5px;padding-left:10px;padding-right:10px;line-height:1;font-size:20px;color:#5f5f5f;background:url(/images/common/bul/bulLnbBtnArrow.gif) right 13px no-repeat}
+.lnbSec .lnbWrap>ul>li>a>img{margin-top:-5px;margin-left:-10px}
+.lnbSec .botBnr{position:absolute;bottom:5px;left:5px;width:228px}
+.lnbSec .botBnr>a{display:inline-block;width:228px;font-size:1px;line-height:1px}
+.lnbSec .botBnr>a>img{width:228px;height:auto}
+
+
+/*! 레이아웃 : 컨덴츠 */
+.middleWrap{padding:17px 0 23px;width:100%}
+.middleWrap>div.innerSec{margin:0 auto;width:1250px;overflow:hidden}
+.middleWrap .lnbSec{float:left;width:237px;min-height:1409px}
+.middleWrap .contentSec{float:right;width:1003px}
+
+
+/*! 레이아웃 : 최상단 */
+.topSec{width:100%;height:33px;background-color:#f5f5f5;overflow:hidden}
+.topSec .innerSec{margin:0 auto;width:1250px}
+
+
+/*! 버튼 모듈 */
+.btn,.btn>span{line-height:1;display:inline-block}
+.btn.btn-goto,.btn.btn-more{color:#fff;border-radius:5px;font-size:16px}
+.btn.btn-goto,.btn.btn-more,.btn.btn-round{border-radius:5px; margin: 0px 5px;}
+.btn,.btn.btn-agree>span,.btn.btn-close>span,.btn.btn-more>span,.btn.btn-save>span,.btn>span{display:inline-block}
+.btn{padding:5px 15px 8px}
+.btn.btn-goto{background-color:#cc0066}
+.btn.btn-goto.popup{background-color:#888}
+.btn.btn-more{background-color:#3e87ac;padding-right:5px}
+.btn.btn-more>span{padding-right:20px;background:url(/images/common/bul/bulMoreArrow.png) right 1px no-repeat}
+.btn.btn-agree{background-color:#3162a2;color:#fff;font-size:16px;border-radius:5px}
+.btn.btn-close,.btn.btn-list,.btn.btn-search{background-color:#898989;color:#fff;border-radius:5px}
+.btn,.btn.btn-agree>span,.btn.btn-close>span,.btn.btn-more>span,.btn.btn-save>span,.btn>span{display:inline-block}
+.btn.btn-list,.btn.btn-search{font-size:14px}
+.btn.btn-list>span,.btn.btn-search>span{display:inline-block;padding:0 5px}
+.btn.btn-close{font-size:16px}
+.btn.btn-close>span{padding:0 10px}
+.btn.btn-save{background-color:#3162a2;color:#fff;font-size:14px;border-radius:5px}
+.btn.btn-save>span{padding:0 5px}
+
+/*! 버튼영역 모듈 */
+.btnSec{padding-top:15px}
+.btnSec.btn-center{text-align:center}
+.btnSec.btn-right{text-align:right}
+
+
+/*! 아이콘 모듈 */
+.ico{display:inline-block}
+.ico.ico-lock{width:18px;height:17px;background:url(/images/common/ico/icoLock.gif) no-repeat}
+.ico.ico-reply{width:18px;height:17px;background:url(/images/common/ico/icoReply.gif) no-repeat}
+
+
+/*! 라벨 모듈 */
+i.tac,i.tac>span{display:inline-block;line-height:1}
+i.tac{padding:3px 10px 5px;font-size:11px;border:1px solid #a2a2a2;border-radius:5px;text-align:center;overflow:hidden}
+i.tac.tac-notice{max-width:60px;border:1px solid #a2a2a2;border-radius:5px;color:#3f3e3e}
+
+
+/*! 고객센터 페이지 */
+.customerWrap .contentTopBnrSec{padding-bottom:10px}
+.customerWrap .customerTitleSec{padding-top:10px;width:100%;overflow:hidden;min-height:24px}
+.customerWrap .customerTitleSec h4{float:left;padding-left:20px;font-size:22px;font-weight:700;color:#ff3f3f;line-height:1;background:url(/images/common/bul/icoRedCircle.gif) 0 50% no-repeat}
+.customerWrap .customerTitleSec .component-customer-searchForm{float:right}
+
+
+/*! 로그인 페이지 */
+.loginWrap{position:absolute;top:50%;left:50%;margin:-240px 0 0 -467.5px;width:935px;height:480px;overflow:hidden;background:url(/images/page/login/bg.jpg) no-repeat}
+.loginWrap .loginForm{box-sizing:border-box;width:100%;height:395px;padding:110px 0 0 480px}
+.loginWrap .loginForm input[type=password],.loginWrap .loginForm input[type=text]{font-size:14px;color:#333;border:0;width:280px}
+.loginWrap .loginForm .id,.loginWrap .loginForm .pw{padding-left:40px;height:65px}
+.loginWrap .subLinkSec{padding:20px 0 0 100px}
+.loginWrap .subLinkSec a{display:inline-block;margin-right:5px}
+
+
+/*! 메인 페이지 */
+.mainWrap .contentTopBnrSec{padding-bottom:10px}
+
+
+/*! 페이지 : 신청서작성 */
+.writeWrap{width:992px}
+.writeWrap .contentTopBnrSec{padding-bottom:5px}
+.writeWrap .deviceName{position:relative;box-sizing:border-box;width:100%;padding-left:20px;min-height:69px;border:1px solid #ccc;background:#f8f8f8;overflow:hidden}
+.writeWrap .deviceName h2{padding-top:21.5px;font-size:22px;color:#0f0f0f;line-height:1}
+.writeWrap .deviceName a.close{position:absolute;top:10px;right:10px;display:block;width:48px;height:49px}
+.writeWrap .deviceName a.close img{width:48px;height:49px}
+.writeWrap .writeContentWrap{padding-top:7px;width:100%;overflow:hidden}
+.writeWrap .writeInfomationSec{float:left;width:270px}
+.writeWrap .writeInfomationSec .itemThumb{box-sizing:border-box;padding:7px 0;width:270px;border:1px solid #d2d2d2;text-align:center}
+.writeWrap .writeInfomationSec .itemThumb>img{width:242px;height:222px;border-radius:5px}
+.writeWrap .writeInfomationSec .itemReqeust{margin-top:5px;box-sizing:border-box;padding:15px 4px;width:270px;min-height:966px;border:1px solid #d2d2d2}
+.writeWrap .writeInfomationSec .itemReqeust h3{padding-left:24px;font-size:16px;background:url(/images/common/bul/icoBlackCircle.gif) 10px 50% no-repeat;font-weight:700}
+.writeWrap .writeInfomationSec .itemReqeust .spec,.writeWrap .writeInfomationSec .itemReqeust .total{margin-top:5px;padding:5px 10px;width:100%;background:#8f8f8f;overflow:hidden;box-sizing:border-box}
+.writeWrap .writeInfomationSec .itemReqeust .tac{box-sizing:border-box;margin-top:5px;padding:5px 10px;width:100%;border-bottom:1px solid #dadada}
+.writeWrap .writeInfomationSec .itemReqeust .tac:after,.writeWrap .writeInfomationSec .itemReqeust .tac:before{display:table;content:"";line-height:0}
+.writeWrap .writeInfomationSec .itemReqeust .tac:after{clear:both}
+.writeWrap .writeInfomationSec .itemReqeust .tac dt{float:left;font-size:14px;font-weight:700}
+.writeWrap .writeInfomationSec .itemReqeust .tac dd{float:right;font-size:13px;text-align:right;font-weight:700}
+.writeWrap .writeInfomationSec .itemReqeust .spec dt{float:left;font-size:14px;font-weight:700;color:#fff}
+.writeWrap .writeInfomationSec .itemReqeust .spec dd{float:right;font-size:14px;text-align:right;color:#fff}
+.writeWrap .writeInfomationSec .itemReqeust .total dt{float:left;font-size:16px;font-weight:700;color:#fff;text-align:center}
+.writeWrap .writeInfomationSec .itemReqeust .total dd{float:right;padding-top:8px;font-size:14px;text-align:right;color:#fff;vertical-align:baseline}
+.writeWrap .writeInfomationSec .itemReqeust .total dd>strong{font-size:22px}
+.writeWrap .writeInfomationSec .itemReqeust .desc{padding-top:3px;text-align:right;font-size:11px;color:#ff725d}
+.writeWrap .writeInfomationSec .itemReqeust .text-md{font-size:14px!important}
+.writeWrap .writeInfomationSec .itemReqeust .text-minus{color:#ff3301}
+.writeWrap .writeInfomationSec .itemReqeust .text-interest{color:#006ff9}
+.writeWrap .writeInfomationSec .itemReqeust .help{vertical-align:middle;position:relative}
+.writeWrap .writeInfomationSec .itemReqeust .telecomInfoSec{padding-bottom:22px;background:url(/images/common/bul/bulPlus.gif) center bottom no-repeat}
+.writeWrap .writeInfomationSec .itemReqeust .deviceInfoSec{padding-top:20px;padding-bottom:40px;background:url(/images/common/bul/bulEqual.gif) center bottom no-repeat}
+.writeWrap .writeFormSec{float:right;width:711px;overflow:hidden}
+.writeWrap .writeFormSec .writeFieldsetSec{box-sizing:border-box;padding:0 15px 35px;width:100%;border:1px solid #d2d2d2;min-height:949px}
+.writeWrap .writeFormSec .block-dl,.writeWrap .writeFormSec .inline-dl{padding-top:15px;overflow:hidden;width:100%}
+.writeWrap .writeFormSec .inline-dl dt{float:left;font-size:16px;color:#090909;padding-right:15px;font-weight:700}
+.writeWrap .writeFormSec .inline-dl dd{float:left;font-size:16px;color:#6b6a6a;font-weight:700}
+.writeWrap .writeFormSec .block-dl dt{font-size:16px;color:#090909;padding-right:15px;font-weight:700}
+.writeWrap .writeFormSec .block-dl dd{padding-left:10px;font-size:16px;color:#6b6a6a;font-weight:700}
+.writeWrap .writeFormSec .planTableSec{margin-top:10px;}
+.writeWrap .writeFormSec .planTableSec table{width:100%}
+.writeWrap .writeFormSec .planTableSec table thead th{padding:4px 0;background:#898989;color:#fff;text-align:center;font-size:14px}
+.writeWrap .writeFormSec .planTableSec table tbody td{padding:4px 0;font-size:14px;text-align:center;font-weight:400}
+.writeWrap .writeFormSec .planTableSec table tbody td.planName{text-align:left}
+.writeWrap .writeFormSec .requestBnrSec{padding-top:15px}
+.writeWrap .writeFormSec .addressFormSec>div{padding-top:0}
+.writeWrap .writeFormSec .addressFormSec .row{padding-top:5px; padding-bottom:0px;}
+.writeWrap .writeFormSec .addressFormSec .row *{vertical-align:middle}
+.writeWrap .writeFormSec .addressFormSec label{padding-left:10px;background:url(/images/common/bul/icoGrayCircle.gif) 0 10px no-repeat}
+.writeWrap .writeFormSec .addressFormSec input[type=text]{box-sizing:border-box;padding:0 5px;width:100%;height:27px;border:1px solid #d2d2d2}
+.writeWrap .writeFormSec .addressFormSec .expressInp{display:inline-block;padding:0 10px;width:100px}
+.writeWrap .writeFormSec .addressFormSec .postInp{display:inline-block}
+.writeWrap .writeFormSec .addressFormSec .postInp input[type=text]{width:100px}
+.writeWrap .writeFormSec .addressFormSec .postInp2{display:inline-block}
+.writeWrap .writeFormSec .addressFormSec .postInp2 input[type=text]{width:140px}
+.writeWrap .writeFormSec .etcTextareaSec{padding-top:5px}
+.writeWrap .writeFormSec .etcTextareaSec textarea{box-sizing:border-box;padding:10px;min-height:30px;width:100%;font-size:13px;font-weight:400}
+.writeWrap .writeFormSec .requestCheckListSec{padding-top:15px}
+.writeWrap .writeFormSec .requestCheckListSec .checklist li{font-size:12px;padding-bottom:5px}
+.writeWrap .writeFormSec .submitSec{padding-top:20px;text-align:center}
+.writeWrap .writeFormSec .writePaperBtnSec{margin-top:10px;padding:15px 0;text-align:center;box-sizing:border-box;width:100%;border:1px solid #d2d2d2}
+.writeWrap .writeFormSec .writePaperBtnSec a{display:inline-block;padding:0 10px}
