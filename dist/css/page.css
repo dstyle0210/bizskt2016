@@ -23,6 +23,35 @@
 .internetContentSec .paperSec{padding-top:15px;text-align:center}
 
 
+/*! 로그인 : page/login.scss */
+.loginBody{display:table;width:100%;height:100%;background-color:#fff}
+.loginBody .bizsktWrap{display:table-cell;width:100%;height:100%;vertical-align:middle}
+.loginWrap{box-sizing:border-box;margin:0 auto;padding:20px 45px;width:721px;border:1px solid #a6a6a6;background-color:#f2f2f2;color:#666}
+.loginWrap .midSec,.loginWrap .titSec{padding-bottom:10px;border-bottom:1px solid #bababa}
+.loginWrap .titSec h1{text-align:center;font-size:22px;color:#5c575b}
+.loginWrap .titSec h1 *{vertical-align:top}
+.loginWrap .titSec h1>span{display:inline-block;padding-top:28px}
+.loginWrap .midSec .desc,.loginWrap .titSec p{padding-top:10px;text-align:center;font-size:13px}
+.loginWrap .titSec p b{font-weight:700;color:#595973}
+.loginWrap .midSec{padding-bottom:15px;border-top:1px solid #dfdfdf}
+.loginWrap .midSec h2{padding:30px 0 20px;text-align:center}
+.loginWrap .midSec fieldset{position:relative;margin:0 auto;width:511px;height:151px;border:1px solid #a6a6a6;background-color:#d9d9d9}
+.loginWrap .midSec fieldset *{box-sizing:border-box}
+.loginWrap .midSec fieldset>div{position:absolute;top:0;left:0}
+.loginWrap .midSec fieldset input[type=password],.loginWrap .midSec fieldset input[type=text]{padding:5px;height:30px;border:1px solid #a6a6a6;background:0 0}
+.loginWrap .midSec fieldset .bul{display:inline-block;padding-left:10px;width:90px;background:url(../images/page/login/bul.jpg) no-repeat 0 6px;font-size:15px;color:#7e807d}
+.loginWrap .midSec fieldset .id{top:38px;left:38px}
+.loginWrap .midSec fieldset .pw{top:74px;left:38px}
+.loginWrap .midSec fieldset .submit{top:34px;left:375px}
+.loginWrap .midSec fieldset .saveid{top:113px;left:136px}
+.loginWrap .midSec fieldset .saveid *{vertical-align:middle}
+.loginWrap .midSec fieldset .saveid label{font-size:12px;color:#333;line-height:1}
+.loginWrap .midSec .desc{padding-top:20px}
+.loginWrap .coptrightSec{border-top:1px solid #dfdfdf;text-align:center;font-size:12px;font-family:"dotum";color:#666}
+.loginWrap .coptrightSec p{padding-top:12px;line-height:1.8}
+.loginWrap .coptrightSec b{font-weight:700}
+
+
 /*! 메인페이지 : page/main.scss */
 .mainContentSec .inner>[class^=step-]{margin-top:20px}
 .mainContentSec .inner .itemsArticle{margin-top:35px}

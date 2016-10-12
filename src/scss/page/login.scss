@@ -1,0 +1,42 @@
+
+/*! 로그인 : page/login.scss */
+.loginBody{ background-color: #fff;display:table;height:100%;width:100%;
+  .bizsktWrap{display:table-cell;width:100%;height:100%;vertical-align:middle;}
+}
+.loginWrap{margin:0 auto;box-sizing:border-box;padding:20px 45px;width:721px;background-color: #f2f2f2;border:1px solid #a6a6a6;color:#666;
+  // 타이틀영역
+  .titSec{border-bottom:1px solid #bababa;padding-bottom:10px;
+    h1{text-align:center; font-size:22px;color:#5c575b;
+      *{vertical-align:top;}
+      >span{display:inline-block;padding-top:28px;}
+    }
+    p{padding-top:10px;text-align:center; font-size:13px;
+      b{color:#595973;font-weight:700;}
+    }
+  }
+
+  // 중단영역
+  .midSec{border-top:1px solid #dfdfdf;border-bottom:1px solid #bababa;padding-bottom:15px;
+    h2{text-align:center;padding:30px 0 20px;}
+    fieldset{position:relative;margin:0 auto;width:511px;height:151px;background-color:#d9d9d9;border:1px solid #a6a6a6;
+      *{box-sizing:border-box;}
+      >div{position:absolute;top:0;left:0;}
+      input[type=text],input[type=password]{padding:5px;height:30px;border:1px solid #a6a6a6; background: transparent;}
+      .bul{ display:inline-block;padding-left:10px;width:90px;background:url('../images/page/login/bul.jpg') no-repeat 0 6px;font-size:15px;color:#7e807d;}
+      .id{top:38px;left:38px;}
+      .pw{top:74px;left:38px;}
+      .submit{top:34px;left:375px;}
+      .saveid{top:113px;left:136px;
+        *{vertical-align:middle;}
+        label{font-size:12px;color:#333;line-height:1;}
+      }
+    }
+    .desc{padding-top:20px;text-align:center;font-size:13px;}
+  }
+  // 풋터영역
+  .coptrightSec{ font-family:"dotum";text-align:center;font-size:12px;color:#666;border-top:1px solid #dfdfdf;
+    p{padding-top:12px;line-height:1.8;}
+    b{font-weight:700;}
+  }
+
+}
