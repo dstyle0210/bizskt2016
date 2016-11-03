@@ -49,17 +49,8 @@
             <!-- 프로그래스 : step3 -->
             <div class="step-4up step3" id="stepDiv"><span class="tts">사은품 선택</span></div>
             <script>
-                // stepAppendLink( 링크경로들(배열) , 탭의 갯수)
-                function stepAppendLink(linkArr,n){
-                    var stepDiv = $("#stepDiv");
-                    var wid = (100/n)+"%";
-                    $(linkArr).each(function(idx,link){
-                        var a = $("<a href='"+link+"'></a>").attr("style","display:inline-block;width:"+wid+";height:60px");
-                        stepDiv.append(a);
-                    });
-                };
                 $(function(){
-                    stepAppendLink(["http://naver.com","http://daum.net"],4);
+                    stepAppendLink(["http://naver.com","http://daum.net"],4); // stepAppendLink( 링크경로들(배열) , 탭의 갯수) : mod.js
                 });
             </script>
             <!-- // 프로그래스 : step3 -->
@@ -182,54 +173,11 @@
                             <p class="desc">※ 사은품 신청완료 후 잔여 해피포인트는 자동소멸됩니다.</p>
                         </div>
                         <script type="text/javascript">
-                            var happyPointClass = function(wrapperId){
-                                this.init = function(wrapperId){
-                                    var o = {};
-                                    o.div = $(wrapperId);
-                                    o.originDiv = o.div.find(".point i").eq(0);
-                                    o.resultDiv = o.div.find(".point i").eq(1).css({"font-size":"21px"});
-                                    o.originPoint = (o.originDiv.html().match(/[0-9]/gi).join(""))*1;
-                                    this.o = o;
-                                };
-                                this.getOriginPoint = function(){
-                                    return this.o.originPoint;
-                                };
-                                this.getOptionPoint = function(){
-                                    var o = this.o;
-                                    var optPoint = 0;
-                                    o.div.find(".mod-accItem").each(function(){
-                                        var sel = $(this).find("select").val();
-                                        var point = $(this).attr("point")*1;
-                                        optPoint += sel*point;
-                                    });
-                                    return optPoint;
-                                };
-                                this.getModulusPoint = function(){
-                                    return (this.o.originPoint - this.getOptionPoint());
-                                };
-                                this.calc = function(){
-                                    var o = this.o;
-                                    var modulusPoint = this.getModulusPoint();
-                                    if(modulusPoint<0){
-                                        alert("해피포인트가 부족합니다.");
-                                      //   return;
-                                    };
-                                    var pointStr = (modulusPoint+"").replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                                    o.resultDiv.html(pointStr+" point");
-                                };
-
-                                this.init(wrapperId);
-                                this.calc();
-                            };
-
-
                             var happyPointFn;
                             $(function(){
-                                console.log("domload");
                                 happyPointFn = new happyPointClass("#happyPointComponent");
                                 // EX
                                 // happyPointFn.calc() // 남은 해피포인트 계단 및 입력하기
-
                                 // happyPointFn.getOriginPoint() // 초기에 입력된 해피포인트 (숫자형)
                                 // happyPointFn.getOptionPoint() // 옵션에 적용된 해피포인트 (숫자형)
                                 // happyPointFn.getModulusPoint() // 남은 해피포인트 (숫자형)

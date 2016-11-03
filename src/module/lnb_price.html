@@ -85,17 +85,21 @@
         <p>band59요금제 <span class="text-minus">(65,860원/월)</span></p>
     </div>
     <h2 class="tit">해피포인트</h2>
-    <div class="happyPoint">
+    <div class="happyPoint" id="happyPointComponent"> <!-- edit : 20161103 : 아이디추가 -->
         <p class="point">해피포인트증정: <i>20,000 point</i></p>
         <div class="accList">
 
             <!-- 악세사리 모듈과 (버튼을 제외한) 동일한 구조입니다. -->
-            <div class="mod-accItem">
+            <div class="mod-accItem" point="1000"> <!-- edit : 20161103 : 금액(point)추가 -->
                 <div class="thumb"><img src="../images/temp/@acc.jpg" alt=""></div>
-                <label for="">[슈피겐] 차량용충전기 1,1000 point</label>
+                <label for="">[슈피겐] 차량용충전기 1000 point</label>
                 <div class="act">
-                    <select name="" id="">
-                        <option value="">1</option>
+                    <select name="" id="" onchange="happyPointFn.calc();"> <!-- edit : 20161103 : 이벤트(onchange)추가  -->
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="10">10</option>
                     </select>
                     <a href="#"><img src="../images/common/btnAccDel.gif" alt=""></a>
                 </div>
@@ -103,12 +107,16 @@
             <!-- // 악세사리 모듈과 (버튼을 제외한) 동일한 구조입니다. -->
 
             <!-- 악세사리 모듈과 (버튼을 제외한) 동일한 구조입니다. -->
-            <div class="mod-accItem">
+            <div class="mod-accItem" point="2000"> <!-- edit : 20161103 : 금액(point)추가 -->
                 <div class="thumb"><img src="../images/temp/@acc.jpg" alt=""></div>
-                <label for="">[슈피겐] 차량용충전기 1,1000 point</label>
+                <label for="">[슈피겐] 차량용충전기 2000 point</label>
                 <div class="act">
-                    <select name="" id="">
-                        <option value="">1</option>
+                    <select name="" id="" onchange="happyPointFn.calc();"> <!-- edit : 20161103 : 이벤트(onchange)추가  -->
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="10">10</option>
                     </select>
                     <a href="#"><img src="../images/common/btnAccDel.gif" alt=""></a>
                 </div>
@@ -119,6 +127,17 @@
         <p class="point type-noBorder">잔여 해피포인트: <i>1,000 point</i></p>
         <p class="desc">※ 사은품 신청완료 후 잔여 해피포인트는 자동소멸됩니다.</p>
     </div>
+    <script type="text/javascript">
+        var happyPointFn;
+        $(function(){
+            happyPointFn = new happyPointClass("#happyPointComponent");
+            // EX
+            // happyPointFn.calc() // 남은 해피포인트 계단 및 입력하기
+            // happyPointFn.getOriginPoint() // 초기에 입력된 해피포인트 (숫자형)
+            // happyPointFn.getOptionPoint() // 옵션에 적용된 해피포인트 (숫자형)
+            // happyPointFn.getModulusPoint() // 남은 해피포인트 (숫자형)
+        });
+    </script>
 
 </div>
 <!-- // LNB 요금정보표 : 기본 as-is 로 작성됨 -->
