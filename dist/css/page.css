@@ -11,7 +11,7 @@
 /*! 신청영역(step2 , step3) 공통 폼 : page/all.scss */
 .offerSec{display:table;min-height:1114px;width:1224px;border:1px solid #d3d3d3;background-color:#f9f9f9}
 .offerSec>*{vertical-align:top}
-.offerSec .lnbSec{display:table-cell;position:relative;width:315px;overflow:hidden;border-right:1px solid #d3d3d3;background-color:#fff}
+.offerSec .lnbSec{display:table-cell;position:relative;width:315px;border-right:1px solid #d3d3d3;background-color:#fff}
 .offerSec .lnbSec .writeInfomationSec{position:relative;top:0;left:0;border:0}
 .offerSec .lnbSec .writeInfomationSec.fixed{position:absolute;top:-1px;left:-1px;border:1px solid #d3d3d3;border-width:1px 1px 0}
 .offerSec .rightSec{display:table-cell;padding:20px 15px 15px;width:911px}

@@ -13,8 +13,7 @@
 		display: table-cell;
 		position: relative;
 		width: 315px;
-		overflow: hidden; 
-		border-right: 1px solid #d3d3d3;
+		border-right: 1px solid #d3d3d3; 
 		background-color: #fff;}
 		.offerSec .lnbSec .writeInfomationSec {
 			position: relative;
