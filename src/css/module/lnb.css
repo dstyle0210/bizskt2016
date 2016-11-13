@@ -298,4 +298,15 @@
 	text-align: center; }
 
 .writeInfomationSec.type-internet .outboundBnr {
-	padding: 15px 0; }
+	box-sizing: border-box;
+	margin: 15px auto 0;
+	padding-top: 50px;
+	width: 304px;
+	height: 160px;
+	background-repeat: no-repeat; }
+	.writeInfomationSec.type-internet .outboundBnr strong {
+		display: inline-block;
+		width: 100%;
+		text-align: center;
+		font-size: 30px; 
+		color: #d50009;}

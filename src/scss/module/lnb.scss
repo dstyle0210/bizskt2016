@@ -102,6 +102,10 @@
     label{font-weight:700;}
   }
   .btnSec{text-align:center;}
-  .outboundBnr{padding:15px 0;}
+
+  // 가입상담베너 영역 글자 추가.
+  .outboundBnr{margin:15px auto 0;box-sizing:border-box;padding-top:50px;width:304px;height:160px;background-repeat:no-repeat;
+    strong{display:inline-block; color: #d50009;width:100%;text-align:center;font-size:30px;}
+  }
 
 }

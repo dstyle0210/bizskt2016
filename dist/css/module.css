@@ -200,7 +200,8 @@
 .writeInfomationSec.type-internet .agreeCheck input[type=checkbox]{width:20px;height:20px}
 .writeInfomationSec.type-internet .agreeCheck label{font-weight:700}
 .writeInfomationSec.type-internet .btnSec{text-align:center}
-.writeInfomationSec.type-internet .outboundBnr{padding:15px 0}
+.writeInfomationSec.type-internet .outboundBnr{box-sizing:border-box;margin:15px auto 0;padding-top:50px;width:304px;height:160px;background-repeat:no-repeat}
+.writeInfomationSec.type-internet .outboundBnr strong{display:inline-block;width:100%;text-align:center;font-size:30px;color:#d50009}
 
 
 /*! 핸드폰 리스트 아이템 : module/phoneItem.scss */
