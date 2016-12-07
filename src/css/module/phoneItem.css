@@ -43,7 +43,7 @@
 		margin-left: 40px; }
 		.mod-phoneList .mod-phoneItem:first-child {
 			margin-left: 0; }
-		.mod-phoneList .mod-phoneItem:nth-child(6n+0) {
+		.mod-phoneList .mod-phoneItem:nth-child(5n+1) {
 			margin-left: 0; }
 		.mod-phoneList .mod-phoneItem:nth-child(-n+5) {
 			margin-top: 0; }

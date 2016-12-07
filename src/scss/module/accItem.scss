@@ -19,7 +19,7 @@
   &.type-5up{
     max-width:(150px * 5) + (25px * 4);
     .mod-accItem{
-      &:nth-child(6n+0){margin-left:0;}
+      &:nth-child(5n+1){margin-left:0;}
       &:nth-child(-n+5){margin-top:0;}
     }
   }

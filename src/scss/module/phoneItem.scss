@@ -18,7 +18,7 @@
     $gap:40px; // 아이템들간의 간격
     float:left;margin-top:$gap;margin-left:$gap;
     &:first-child{margin-left:0;}
-    &:nth-child(6n+0){margin-left:0;}
+    &:nth-child(5n+1){margin-left:0;}
     &:nth-child(-n+5){margin-top:0;}
     // nth-child Support
     &.no-nthchild-left{margin-left:0;}

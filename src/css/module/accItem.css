@@ -35,7 +35,7 @@
 	overflow: hidden; }
 	.mod-accList.type-5up {
 		max-width: 850px; }
-		.mod-accList.type-5up .mod-accItem:nth-child(6n+0) {
+		.mod-accList.type-5up .mod-accItem:nth-child(5n+1) {
 			margin-left: 0; }
 		.mod-accList.type-5up .mod-accItem:nth-child(-n+5) {
 			margin-top: 0; }

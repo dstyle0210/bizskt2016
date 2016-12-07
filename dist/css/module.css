@@ -11,7 +11,7 @@
 .mod-accItem .act a{display:inline-block;padding-left:5px}
 .mod-accList{margin:0 auto;width:100%;overflow:hidden}
 .mod-accList.type-5up{max-width:850px}
-.mod-accList.type-5up .mod-accItem:nth-child(6n+0){margin-left:0}
+.mod-accList.type-5up .mod-accItem:nth-child(5n+1){margin-left:0}
 .mod-accList.type-5up .mod-accItem:nth-child(-n+5){margin-top:0}
 .mod-accList.type-6up{max-width:1075px}
 .mod-accList.type-6up .mod-accItem{margin-left:35px}
@@ -215,7 +215,7 @@
 .mod-phoneList{padding:0 5px;max-width:1223px;width:100%;overflow:hidden}
 .mod-phoneList .mod-phoneItem{float:left;margin-top:40px;margin-left:40px}
 .mod-phoneList .mod-phoneItem:first-child{margin-left:0}
-.mod-phoneList .mod-phoneItem:nth-child(6n+0){margin-left:0}
+.mod-phoneList .mod-phoneItem:nth-child(5n+1){margin-left:0}
 .mod-phoneList .mod-phoneItem:nth-child(-n+5){margin-top:0}
 .mod-phoneList .mod-phoneItem.no-nthchild-left{margin-left:0}
 .mod-phoneList .mod-phoneItem.no-nthchild-top{margin-top:0}
