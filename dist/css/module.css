@@ -117,6 +117,8 @@
 .component-customer-write>table.viewTable>tbody>tr>td,.component-customer-write>table.viewTable>tbody>tr>th{padding:7px 0;border-bottom:1px solid #d0d0d0;font-size:13px}
 .component-customer-write>table.viewTable>tbody>tr>th{text-align:center}
 .component-customer-write input[type=password].text,.component-customer-write input[type=text].text,.component-customer-write textarea.textarea{border:1px solid #666}
+.component-customer-write>table.viewTable>tbody>tr>td p{padding-bottom:5px}
+.component-customer-write>table.viewTable>tbody>tr>td table,.component-customer-write>table.viewTable>tbody>tr>td td,.component-customer-write>table.viewTable>tbody>tr>td th{border:1px solid #333}
 
 
 /*! 고객센터 페이지 */

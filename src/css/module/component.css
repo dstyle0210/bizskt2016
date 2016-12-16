@@ -282,6 +282,15 @@
 .component-customer-write input[type=password].text, .component-customer-write input[type=text].text, .component-customer-write textarea.textarea {
 	border: 1px solid #666; }
 
+.component-customer-write > table.viewTable > tbody > tr > td p {
+	padding-bottom: 5px; }
+
+.component-customer-write > table.viewTable > tbody > tr > td table {
+	border: 1px solid #333; }
+
+.component-customer-write > table.viewTable > tbody > tr > td td, .component-customer-write > table.viewTable > tbody > tr > td th {
+	border: 1px solid #333; }
+
 /*! 고객센터 페이지 */
 .customerWrap .contentTopBnrSec {
 	padding-bottom: 10px; }

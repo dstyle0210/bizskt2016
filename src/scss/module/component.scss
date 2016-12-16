@@ -79,6 +79,11 @@
 .component-customer-write>table.viewTable>tbody>tr>td,.component-customer-write>table.viewTable>tbody>tr>th{padding:7px 0;font-size:13px;border-bottom:1px solid #d0d0d0}
 .component-customer-write>table.viewTable>tbody>tr>th{text-align:center}
 .component-customer-write input[type=password].text,.component-customer-write input[type=text].text,.component-customer-write textarea.textarea{border:1px solid #666}
+.component-customer-write>table.viewTable>tbody>tr>td{
+  p{padding-bottom:5px;}
+  table{border:1px solid #333;}
+  td,th{border:1px solid #333;}
+}
 
 /*! 고객센터 페이지 */
 .customerWrap .contentTopBnrSec{padding-bottom:10px}
