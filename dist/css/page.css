@@ -47,6 +47,9 @@
 .loginWrap .midSec fieldset .saveid *{vertical-align:middle}
 .loginWrap .midSec fieldset .saveid label{font-size:12px;color:#333;line-height:1}
 .loginWrap .midSec .desc{padding-top:20px}
+@media \0screen{
+	.loginWrap .midSec .desc{letter-spacing:-1px}
+}
 .loginWrap .coptrightSec{border-top:1px solid #dfdfdf;text-align:center;font-size:12px;font-family:"dotum";color:#666}
 .loginWrap .coptrightSec p{padding-top:12px;line-height:1.8}
 .loginWrap .coptrightSec b{font-weight:700}
@@ -129,13 +132,22 @@
 .usedPhoneBenefitSec [class^=ico-]{position:absolute;top:13px;left:18px}
 .usedPhoneBenefitSec p,.userInfoSec>table th{padding-bottom:10px;font-size:21px;color:#000}
 .usedPhoneBenefitSec .comment{letter-spacing:-1px;font-weight:700;font-size:14px;font-family:"dotum";color:#494949}
-.userAgreeSec,.userInfoSec{padding-top:15px}
+.userInfoSec{padding-top:15px}
 .userInfoSec>table{width:100%}
 .userInfoSec>table th{padding-left:20px;text-align:left}
 .userInfoSec>table td{padding-bottom:10px}
 .userInfoSec>table input[type=text],.userInfoSec>table select{box-sizing:border-box;height:30px;border:1px solid #707070;background-color:#fff}
 .userInfoSec>table input[type=text]{padding:0 10px}
-.userAgreeSec{font-family:"dotum"}
+
+
+/*! IE8 수정 */
+@media \0screen{
+	.userInfoSec>table select{padding-bottom:5px}
+}
+
+
+/*! // IE8 수정 */
+.userAgreeSec{padding-top:15px;font-family:"dotum"}
 .userAgreeSec>div{padding-bottom:15px;padding-left:33px}
 .userAgreeSec>div *{vertical-align:middle}
 .userAgreeSec [type=checkbox]{width:20px;height:20px}

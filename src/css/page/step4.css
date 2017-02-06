@@ -123,6 +123,12 @@
 		.userInfoSec > table input[type=text] {
 			padding: 0 10px; }
 
+/*! IE8 수정 */
+@media \0screen {
+	.userInfoSec > table select {
+		padding-bottom: 5px; } }
+
+/*! // IE8 수정 */
 .userAgreeSec {
 	padding-top: 15px;
 	font-family: "dotum"; }

@@ -13,7 +13,7 @@
     a{display:inline-block;padding-left:5px;}
   }
 }
-
+/*! IE8 수정 */
 .mod-accList{margin:0 auto;width:100%;overflow:hidden;
   $gap:25px; // 아이템들간의 간격
   &.type-5up{
@@ -23,11 +23,12 @@
       &:nth-child(-n+5){margin-top:0;}
     }
   }
+
   &.type-6up{
     max-width:(150px * 6) + (35px * 5);
     .mod-accItem{
       margin-left:$gap+10px;
-      &:nth-child(7n+0){margin-left:0;}
+      &:nth-child(6n+1){margin-left:0;}
       &:nth-child(-n+6){margin-top:0;}
     }
   }
@@ -39,3 +40,4 @@
     &.no-nthchild-top{margin-top:0;}
   }
 }
+/*! // IE8 수정 */
