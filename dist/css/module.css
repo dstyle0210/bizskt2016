@@ -24,9 +24,8 @@
 .mod-accList .mod-accItem:first-child{margin-left:0}
 .mod-accList .mod-accItem.no-nthchild-left{margin-left:0}
 .mod-accList .mod-accItem.no-nthchild-top{margin-top:0}
-
-
 /*! // IE8 수정 */
+
 
 /*! 모듈공통 : module/all.scss */
 [class^=mod-],[class^=mod-] *{box-sizing:border-box}
@@ -144,9 +143,8 @@
 }
 .component-customer-searchForm>input{box-sizing:border-box;height:25px}
 .component-customer-searchForm>a{margin-top:-1px}
-
-
 /*! // IE8 수정됨 */
+
 
 /*! LNB 요금계산기 : module/lnb.scss */
 .writeInfomationSec{width:315px;border:1px solid #d3d3d3;border-width:1px 1px 0;background-color:#fff;color:#666}

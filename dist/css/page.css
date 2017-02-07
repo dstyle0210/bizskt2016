@@ -144,9 +144,8 @@
 @media \0screen{
 	.userInfoSec>table select{padding-bottom:5px}
 }
-
-
 /*! // IE8 수정 */
+
 .userAgreeSec{padding-top:15px;font-family:"dotum"}
 .userAgreeSec>div{padding-bottom:15px;padding-left:33px}
 .userAgreeSec>div *{vertical-align:middle}
