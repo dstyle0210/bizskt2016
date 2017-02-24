@@ -12,7 +12,7 @@ var Mod = {
         if (modPhoneList.length && !Modernizr.nthchild) {
             modPhoneList.each(function () {
                 var me = $(this);
-                me.find(".mod-phoneItem:first-child,.mod-phoneItem:nth-child(6n+0)").addClass("no-nthchild-left");
+                me.find(".mod-phoneItem:first-child,.mod-phoneItem:nth-child(5n+1)").addClass("no-nthchild-left");
                 me.find(".mod-phoneItem:nth-child(-n+5)").addClass("no-nthchild-top");
             });
         };
