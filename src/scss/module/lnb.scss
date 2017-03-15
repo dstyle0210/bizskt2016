@@ -41,7 +41,7 @@
 
 // 해피포인트
 .writeInfomationSec .happyPoint{
-  .point{margin:0 auto;padding:13px 0;width:284px;font-size:22px;color:#000;text-align:center;border-bottom:1px solid #d3d3d3;font-weight:400;
+  .point{margin:0 auto;padding:13px 0;width:284px;font-size:22px;color:#000;text-align:center;border-bottom:1px solid #d3d3d3;font-weight:400;letter-spacing:-1px;
     >i{color:#ff0000;}
     &.type-noBorder{border-bottom:0;padding-bottom:0;}
   }

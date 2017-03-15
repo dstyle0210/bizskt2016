@@ -155,6 +155,9 @@
 	border-bottom: 1px solid #d0d0d0;
 	line-height: 1.1; }
 
+.component-customer-list table.listTable > tbody td * {
+	vertical-align: middle; }
+
 .component-customer-list table.listTable > tbody td.index {
 	text-align: center; }
 
@@ -312,15 +315,29 @@
 
 .customerWrap .customerTitleSec .component-customer-searchForm {
 	float: right; }
+	.customerWrap .customerTitleSec .component-customer-searchForm > * {
+		vertical-align: middle; }
 
 /*! 컴포넌트 : 검색영역 */
+/*! IE8 수정됨 */
 .component-customer-searchForm > label {
+	display: inline-block;
+	padding-top: 7px;
 	padding-right: 15px;
 	font-size: 13px; }
 
 .component-customer-searchForm > select {
 	height: 25px; }
 
+@media \0screen {
+	.component-customer-searchForm > select {
+		padding-bottom: 3px; } }
+
 .component-customer-searchForm > input {
 	box-sizing: border-box;
 	height: 25px; }
+
+.component-customer-searchForm > a {
+	margin-top: -1px; }
+
+/*! // IE8 수정됨 */

@@ -1,16 +1,18 @@
 $(function(){
     Mod.phoneList();
     Mod.accList();
+    Mod.tabUi();
 });
 
 var Mod = {
+    /*! IE8 수정됨 */
     // 핸드폰 리스트 서포트 : Modernizr 필수
     phoneList : function() {
         var modPhoneList = $(".mod-phoneList");
         if (modPhoneList.length && !Modernizr.nthchild) {
             modPhoneList.each(function () {
                 var me = $(this);
-                me.find(".mod-phoneItem:first-child,.mod-phoneItem:nth-child(6n+0)").addClass("no-nthchild-left");
+                me.find(".mod-phoneItem:first-child,.mod-phoneItem:nth-child(5n+1)").addClass("no-nthchild-left");
                 me.find(".mod-phoneItem:nth-child(-n+5)").addClass("no-nthchild-top");
             });
         };
@@ -21,11 +23,29 @@ var Mod = {
         if (modAccList.length && !Modernizr.nthchild) {
             modAccList.each(function () {
                 var me = $(this);
-                me.find(".mod-accItem:first-child,.mod-accItem:nth-child(6n+0)").addClass("no-nthchild-left");
-                me.find(".mod-accItem:nth-child(-n+5)").addClass("no-nthchild-top");
+                if(modAccList.hasClass("type-5up")){
+                    me.find(".mod-accItem:first-child,.mod-accItem:nth-child(5n+1)").addClass("no-nthchild-left");
+                    me.find(".mod-accItem:nth-child(-n+5)").addClass("no-nthchild-top");
+                }else if(modAccList.hasClass("type-6up")){
+                    me.find(".mod-accItem:first-child,.mod-accItem:nth-child(6n+1)").addClass("no-nthchild-left");
+                    me.find(".mod-accItem:nth-child(-n+6)").addClass("no-nthchild-top");
+                }
             });
         };
+    },
+    // 탭 링크영역 서포트 : Modernizr 필수
+    tabUi:function(){
+        var modTab = $(".tab-link");
+        if (modTab.length && !Modernizr.nthchild) {
+            if(modTab.hasClass("tab-3up")){
+                modTab.find("li").eq(1).css({"left":"33.2%"});
+                modTab.find("li").eq(2).css({"left":"66.4%"});
+            }else if(modTab.hasClass("tab-2up")){
+                modTab.find("li").eq(1).css({"left":"50%"});
+            };
+        }
     }
+    /*! // IE8 수정됨 */
 };
 
 /**

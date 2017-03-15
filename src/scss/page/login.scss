@@ -32,6 +32,11 @@
       }
     }
     .desc{padding-top:20px;text-align:center;font-size:13px;}
+    /*! IE8 수정됨 */
+    @media \0screen{
+      .desc{letter-spacing:-1px;}
+    }
+    /*! // IE8 수정됨 */
   }
   // 풋터영역
   .coptrightSec{ font-family:"dotum";text-align:center;font-size:12px;color:#666;border-top:1px solid #dfdfdf;

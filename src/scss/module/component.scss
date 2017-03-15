@@ -39,6 +39,7 @@
 .component-customer-list table.listTable>thead th{padding-bottom:10px;font-size:13px;text-align:center;border-bottom:2px solid #afafaf;color:#333;line-height:1}
 .component-customer-list table.listTable>thead th.title{border-bottom:2px solid #e04500}
 .component-customer-list table.listTable>tbody td{padding:8px 0;border-bottom:1px solid #d0d0d0;line-height:1.1}
+.component-customer-list table.listTable>tbody td *{vertical-align:middle;}
 .component-customer-list table.listTable>tbody td.index{text-align:center}
 .component-customer-list table.listTable>tbody td.title a{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;zoom:1;display:inline-block;max-width:98%;vertical-align:middle}
 .component-customer-list table.listTable>tbody td.title a.notice{color:#ff4800}
@@ -69,7 +70,7 @@
 /*! 컴포넌트 : 고객센터용 게시판 상세 */
 .component-customer-view{padding-top:20px;width:100%;overflow:hidden}
 .component-customer-view>table.viewTable{width:100%;table-layout:fixed;border-top:2px solid #e04500}
-.component-customer-view>table.viewTable>tbody>tr>td,.component-customer-view>table.viewTable>tbody>tr>th{padding:7px 0;font-size:13px;border-bottom:1px solid #d0d0d0}
+.component-customer-view>table.viewTable>tbody>tr>td,.component-customer-view>table.viewTable>tbody>tr>th{padding:7px 0;font-size:13px;border-bottom:1px solid #d0d0d0;}
 .component-customer-view>table.viewTable>tbody>tr>th{text-align:center}
 
 
@@ -89,9 +90,17 @@
 .customerWrap .contentTopBnrSec{padding-bottom:10px}
 .customerWrap .customerTitleSec{padding-top:10px;width:100%;overflow:hidden;min-height:24px}
 .customerWrap .customerTitleSec h4{float:left;padding-left:20px;font-size:22px;font-weight:700;color:#ff3f3f;line-height:1;background:url(../images/board/icoRedCircle.gif) 0 50% no-repeat}
-.customerWrap .customerTitleSec .component-customer-searchForm{float:right}
+.customerWrap .customerTitleSec .component-customer-searchForm{float:right;
+  >*{vertical-align:middle;}
+}
 
 /*! 컴포넌트 : 검색영역 */
-.component-customer-searchForm>label{padding-right:15px;font-size:13px}
-.component-customer-searchForm>select{height:25px}
+/*! IE8 수정됨 */
+.component-customer-searchForm>label{display:inline-block;padding-top:7px;padding-right:15px;font-size:13px}
+.component-customer-searchForm>select{height:25px;}
+@media \0screen{
+  .component-customer-searchForm>select{padding-bottom:3px;}
+}
 .component-customer-searchForm>input{box-sizing:border-box;height:25px}
+.component-customer-searchForm>a{margin-top:-1px;}
+/*! // IE8 수정됨 */
